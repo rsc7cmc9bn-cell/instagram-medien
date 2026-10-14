@@ -1,9 +1,34 @@
-# Platzhalter: Veröffentlichung über die Instagram Graph API (noch nicht aktiv)
+# Veröffentlicht fällige Einträge aus plan/zeitplan.json alle 15 Minuten über die Instagram Graph API
 name: Instagram veröffentlichen
 on:
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
+    inputs:
+      modus:
+        description: "test = nur Verbindung prüfen, leer = veröffentlichen"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: instagram-veroeffentlichen
+  cancel-in-progress: false
 jobs:
-  noop:
+  veroeffentlichen:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Noch nicht eingerichtet"
+      - uses: actions/checkout@v4
+      - name: Fällige Einträge veröffentlichen
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          MODUS: ${{ github.event.inputs.modus }}
+        run: python3 tools/veroeffentlichen.py
+      - name: Status speichern
+        if: always()
+        run: |
+          git config user.name "instagram-planer"
+          git config user.email "actions@users.noreply.github.com"
+          git add plan/veroeffentlicht.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Veröffentlichungsstatus aktualisiert" && git pull --rebase && git push)

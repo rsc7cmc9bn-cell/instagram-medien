@@ -1,0 +1,353 @@
+{
+ "hinweis": "Zeiten in Europe/Berlin. Einträge vor \"start\" laufen noch über Metricool. entwurf=true wird nicht veröffentlicht.",
+ "start": null,
+ "eintraege": [
+  {
+   "id": "2026-10-15-beitrag-angebotspreis",
+   "zeit": "2026-10-15T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/karussell-angebotspreis/01.jpg",
+    "jpg/beitraege/karussell-angebotspreis/02.jpg",
+    "jpg/beitraege/karussell-angebotspreis/03.jpg",
+    "jpg/beitraege/karussell-angebotspreis/04.jpg",
+    "jpg/beitraege/karussell-angebotspreis/05.jpg",
+    "jpg/beitraege/karussell-angebotspreis/06.jpg",
+    "jpg/beitraege/karussell-angebotspreis/07.jpg"
+   ],
+   "text": "Zu hoch angesetzt, und die Immobilie steht monatelang. Zu niedrig, und Sie verschenken Geld.\n\nDer Angebotspreis entscheidet, wie schnell und zu welchem Ergebnis verkauft wird. Fünf Faktoren spielen dabei die Hauptrolle: Vergleichsverkäufe, Lage, Zustand, Nachfrage und die richtige Strategie zum Start.\n\nIm Karussell erklären wir jeden davon. Speichern Sie sich den Beitrag für später.\n\n#immobilienbewertung #wertermittlung #immobiliensiegburg #rheinsiegkreis #hausverkaufen"
+  },
+  {
+   "id": "2026-10-15-story-1000-1-bewertung_marktpreiseinschaetzung",
+   "zeit": "2026-10-15T10:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/1-Bewertung_Marktpreiseinschaetzung.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-15-story-1120-2-verkauft_swisttal-ollheim",
+   "zeit": "2026-10-15T11:20",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/2-Verkauft_Swisttal-Ollheim.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-15-story-1320-3-angebote_07_seelscheid",
+   "zeit": "2026-10-15T13:20",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_07_seelscheid.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-15-story-1400-3-angebote_06_lohmar-weegen",
+   "zeit": "2026-10-15T14:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_06_lohmar-weegen.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-15-story-1640-3-angebote_02_troisdorf",
+   "zeit": "2026-10-15T16:40",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_02_troisdorf.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-15-story-1800-4-ueber-uns_qualifikationen",
+   "zeit": "2026-10-15T18:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/4-Ueber-uns_Qualifikationen.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-16-story-0800-mm-2026-10-16-zinsen",
+   "zeit": "2026-10-16T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-10-16-zinsen.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-16-story-1200-3-angebote_04_pleiserhohn",
+   "zeit": "2026-10-16T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_04_pleiserhohn.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-16-story-1240-3-angebote_03_porz-langel",
+   "zeit": "2026-10-16T12:40",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_03_porz-langel.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-16-story-1320-3-angebote_05_belgisches-viertel",
+   "zeit": "2026-10-16T13:20",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_05_belgisches-viertel.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-17-beitrag-kaufnebenkosten",
+   "zeit": "2026-10-17T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-01.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-02.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-03.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-04.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-05.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-06.jpg"
+   ],
+   "text": "Was kostet ein Hauskauf wirklich?\n\nZum Kaufpreis kommen in NRW Grunderwerbsteuer, Notar und Grundbuch sowie meist die Maklerprovision. Bei 400.000 € Kaufpreis sind das schnell rund 48.000 €. Im Karussell zeigen wir jeden Posten und ein Rechenbeispiel.\n\nSpeichern Sie sich den Beitrag für Ihre Planung.\n\n#kaufnebenkosten #hauskaufen #grunderwerbsteuer #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-17-story-1200-3-angebote_08_kaldauen-dhh",
+   "zeit": "2026-10-17T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_08_kaldauen-dhh.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-18-story-1200-2-verkauft_hennef-weldergoven",
+   "zeit": "2026-10-18T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/2-Verkauft_Hennef-Weldergoven.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-19-story-0800-mm-2026-10-19-vermarktung",
+   "zeit": "2026-10-19T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-10-19-vermarktung.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-19-beitrag-marktpreis",
+   "zeit": "2026-10-19T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/2026-10-19_marktpreis.jpg"
+   ],
+   "text": "Was ist Ihr Zuhause heute wert?\n\nEine Zahl aus dem Internet beantwortet diese Frage selten richtig. Wir nehmen uns deshalb Zeit für ein persönliches Gespräch, sehen uns Ihre Unterlagen an und gehen gemeinsam mit Ihnen durch die Immobilie. Im Büro bereiten wir alles auf und erklären Ihnen danach Schritt für Schritt, welcher Preis in Ihrer Lage realistisch ist.\n\nSo haben Sie eine sichere Grundlage, ganz gleich, ob Sie verkaufen möchten oder erst einmal Klarheit suchen.\n\nTermin per Nachricht.\n\n#immobilienbewertung #marktwert #hausverkaufen #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-20-story-1200-3-angebote_09_kaldauen-reh",
+   "zeit": "2026-10-20T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_09_kaldauen-reh.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-21-story-0800-mm-2026-10-21-begriff-auflassungsvormerkung",
+   "zeit": "2026-10-21T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-10-21-begriff-auflassungsvormerkung.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-21-beitrag-kaldauen",
+   "zeit": "2026-10-21T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i5-orte-kaldauen-2.jpg"
+   ],
+   "text": "Unsere Orte: Siegburg-Kaldauen.\n\nViel Grün, gewachsene Straßen und trotzdem schnell in der Stadt und am ICE-Bahnhof. Kaldauen gehört zu den Wohnlagen, nach denen wir am häufigsten gefragt werden.\n\nIn der Reihe „Unsere Orte“ stellen wir die Stadtteile vor, in denen wir zu Hause sind. Welcher Ort soll als Nächstes kommen?\n\n#kaldauen #siegburg #unsereorte #wohnenimrheinsiegkreis #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-22-story-1200-3-angebote_07_seelscheid",
+   "zeit": "2026-10-22T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_07_seelscheid.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-23-story-0800-mm-2026-10-23-zahl-grunderwerbsteuer",
+   "zeit": "2026-10-23T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-10-23-zahl-grunderwerbsteuer.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-23-beitrag-energieausweis",
+   "zeit": "2026-10-23T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/2026-10-22_ratgeber-energieausweis.jpg"
+   ],
+   "text": "Der Energieausweis beim Hausverkauf: Wann brauchen Sie ihn?\n\nSchon in der Anzeige. Wer eine Immobilie inseriert, muss die wichtigsten Angaben aus dem Energieausweis nennen, etwa Art des Ausweises, Kennwert, Energieträger und Baujahr.\n\nSpätestens bei der Besichtigung. Interessenten muss der Ausweis vorgelegt werden.\n\nNach dem Kauf. Der Käufer erhält den Ausweis im Original oder als Kopie.\n\nOb Verbrauchs- oder Bedarfsausweis, hängt vom Gebäude ab. Wir prüfen das für Sie und kümmern uns bei Bedarf um die Erstellung.\n\nSpeichern Sie sich den Beitrag für später.\n\n#energieausweis #hausverkaufen #immobilienratgeber #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-24-story-1200-3-angebote_06_lohmar-weegen",
+   "zeit": "2026-10-24T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_06_lohmar-weegen.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-25-beitrag-mythen",
+   "zeit": "2026-10-25T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i2-mythos-01.jpg",
+    "jpg/beitraege/ideen/i2-mythos-02.jpg",
+    "jpg/beitraege/ideen/i2-mythos-03.jpg",
+    "jpg/beitraege/ideen/i2-mythos-04.jpg",
+    "jpg/beitraege/ideen/i2-mythos-05.jpg"
+   ],
+   "text": "Drei Sätze, die wir beim Hausverkauf oft hören, und warum sie nicht stimmen.\n\nIm Winter verkauft man schlecht? Ein hoher Preis lässt Spielraum? Die Online-Bewertung reicht? Wischen Sie durch und lesen Sie, was wir in 33 Jahren dazu erlebt haben.\n\nWelchen Mythos sollen wir als Nächstes aufklären? Schreiben Sie es uns in die Kommentare.\n\n#mythosoderfakt #hausverkaufen #immobilientipps #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-25-story-1200-1-bewertung_marktpreiseinschaetzung",
+   "zeit": "2026-10-25T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/1-Bewertung_Marktpreiseinschaetzung.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-26-story-0800-mm-2026-10-26-mythos-notar",
+   "zeit": "2026-10-26T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-10-26-mythos-notar.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-26-beitrag-hennef",
+   "zeit": "2026-10-26T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/2026-10-23_verkauft-hennef.jpg"
+   ],
+   "text": "Verkauft: Einfamilienhaus in Hennef-Weldergoven.\n\nEin freistehendes Haus mit Garagen und großem Garten, mit Sanierungsbedarf und viel Potenzial. Gerade bei solchen Immobilien kommt es auf eine ehrliche Einschätzung und die richtigen Käufer an. Danke an die Eigentümer für ihr Vertrauen.\n\nSie möchten wissen, was Ihre Immobilie in Hennef oder Umgebung wert ist? Schreiben Sie uns eine Nachricht.\n\n#verkauft #hennef #weldergoven #immobilienhennef #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-27-story-1200-3-angebote_04_pleiserhohn",
+   "zeit": "2026-10-27T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_04_pleiserhohn.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-28-beitrag-erben",
+   "zeit": "2026-10-28T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i3-erben-01.jpg",
+    "jpg/beitraege/ideen/i3-erben-02.jpg",
+    "jpg/beitraege/ideen/i3-erben-03.jpg",
+    "jpg/beitraege/ideen/i3-erben-04.jpg",
+    "jpg/beitraege/ideen/i3-erben-05.jpg",
+    "jpg/beitraege/ideen/i3-erben-06.jpg",
+    "jpg/beitraege/ideen/i3-erben-07.jpg"
+   ],
+   "text": "Das Elternhaus geerbt: Was ist jetzt zu tun?\n\nIn einer ohnehin schweren Zeit kommen viele Fragen auf. Nachweis, Grundbuch, Erbengemeinschaft, Steuer und am Ende die Frage, ob man das Haus behält oder verkauft. Wir haben die ersten Schritte für Sie zusammengefasst.\n\nWenn Sie darüber sprechen möchten, schreiben Sie uns. Vertraulich und ohne Druck.\n\n#erbimmobilie #elternhaus #erbschaft #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-29-story-1200-3-angebote_03_porz-langel",
+   "zeit": "2026-10-29T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_03_porz-langel.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-30-story-0800-mm-2026-10-30-begriff-grundschuld",
+   "zeit": "2026-10-30T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-10-30-begriff-grundschuld.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-30-beitrag-frau",
+   "zeit": "2026-10-30T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/von-frau-zu-frau.jpg"
+   ],
+   "text": "Manche Entscheidungen bespricht man lieber mit einer Frau.\n\nTrennung, Erbschaft oder Familienzuwachs: Solche Lebensphasen bringen oft auch eine Entscheidung über das eigene Zuhause mit sich. Ich höre zu, ordne die Möglichkeiten ein und begleite Sie in Ihrem Tempo. Vertraulich und ohne Druck.\n\nWenn Sie ein erstes Gespräch möchten, schreiben Sie mir eine Nachricht.\n\nBritta Nießen\n\n#vonfrauzufrau #erbimmobilie #trennung #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-10-31-story-1200-2-verkauft_swisttal-ollheim",
+   "zeit": "2026-10-31T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/2-Verkauft_Swisttal-Ollheim.jpg"
+   ]
+  },
+  {
+   "id": "2026-11-01-beitrag-besichtigung",
+   "zeit": "2026-11-01T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i6-besichtigung-01.jpg",
+    "jpg/beitraege/ideen/i6-besichtigung-02.jpg",
+    "jpg/beitraege/ideen/i6-besichtigung-03.jpg",
+    "jpg/beitraege/ideen/i6-besichtigung-04.jpg",
+    "jpg/beitraege/ideen/i6-besichtigung-05.jpg",
+    "jpg/beitraege/ideen/i6-besichtigung-06.jpg"
+   ],
+   "text": "Besichtigung geplant? Mit dieser Checkliste übersehen Sie nichts.\n\nUnterlagen, Bausubstanz, Technik und Umgebung: vier Punkte, die beim ersten Termin den Unterschied machen. Speichern Sie sich den Beitrag vor Ihrer nächsten Besichtigung.\n\n#besichtigung #hauskaufen #checkliste #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "id": "2026-11-01-story-1200-4-ueber-uns_qualifikationen",
+   "zeit": "2026-11-01T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/4-Ueber-uns_Qualifikationen.jpg"
+   ]
+  },
+  {
+   "id": "2026-11-02-beitrag-lohmar",
+   "zeit": "2026-11-02T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/2026-10-24_angebot-lohmar-weegen.jpg"
+   ],
+   "text": "Im Angebot: Reiheneckhaus in Aussichtslage, Lohmar-Weegen.\n\nStatt starrer Etagen verteilt sich der Wohnraum hier auf acht versetzte Halbebenen, vom Keller bis zum Dachgeschoss. Das sorgt für viel Licht, großzügige Sichtachsen und klar getrennte Wohnbereiche. Die Lage ist ruhig, im beliebten Lohmarer Stadtteil Weegen.\n\n6 Zimmer · 164 m² Wohnfläche · 520 m² Grundstück\nKaufpreis: 399.000 €\n\nEnergieverbrauchsausweis, 110,2 kWh/(m²a), Gas, Baujahr 1990, Effizienzklasse D\n\nExposé und Besichtigung: Schreiben Sie uns eine Nachricht.\n\n#lohmar #weegen #reiheneckhaus #hauskaufen #immobilienlohmar #rheinsiegkreis"
+  },
+  {
+   "id": "2026-11-04-beitrag-pflichten",
+   "zeit": "2026-11-04T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i4-pflichten-01.jpg",
+    "jpg/beitraege/ideen/i4-pflichten-02.jpg",
+    "jpg/beitraege/ideen/i4-pflichten-03.jpg",
+    "jpg/beitraege/ideen/i4-pflichten-04.jpg",
+    "jpg/beitraege/ideen/i4-pflichten-05.jpg"
+   ],
+   "text": "Älteres Haus gekauft? Dann haben Sie zwei Jahre Zeit für zwei Pflichten.\n\nNeue Eigentümer müssen eine ungedämmte oberste Geschossdecke und ungedämmte Leitungen in unbeheizten Räumen dämmen. Klingt nach viel, ist oft überschaubar. Wichtig ist, es von Anfang an einzuplanen.\n\nAllgemeine Information, keine Rechtsberatung.\n\n#hauskaufen #sanierungspflicht #energieeffizienz #immobiliensiegburg #rheinsiegkreis",
+   "entwurf": true
+  },
+  {
+   "id": "2026-11-13-story-0800-mm-2026-11-13-frist-grundsteuer",
+   "zeit": "2026-11-13T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-11-13-frist-grundsteuer.jpg"
+   ]
+  }
+ ]
+}
