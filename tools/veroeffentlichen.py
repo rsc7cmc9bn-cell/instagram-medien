@@ -1,26 +1,35 @@
 """Veröffentlicht fällige Beiträge und Storys aus plan/zeitplan.json über die Instagram Graph API.
 
-Läuft in GitHub Actions. Zugang über das Secret IG_ACCESS_TOKEN (Seiten-Schlüssel über
-Facebook-Login, oder Instagram-Login-Schlüssel, der mit "IG" beginnt). Bilder müssen JPEG sein
-und öffentlich erreichbar; sie werden per Commit-SHA-URL aus diesem Repo geladen.
+Läuft in GitHub Actions. Zugang über das Secret IG_ACCESS_TOKEN (Instagram-Login-Schlüssel, beginnt
+mit "IG", oder Seiten-Schlüssel über Facebook-Login). Instagram-Login-Schlüssel gelten 60 Tage; das
+Skript frischt sie regelmäßig auf und legt den neuen Schlüssel verschlüsselt in plan/token.enc ab.
+Das ursprüngliche Secret dient dabei als Passwort, im Repo liegt nie ein lesbarer Schlüssel.
+
+Bilder müssen JPEG sein und öffentlich erreichbar; sie werden per Commit-SHA-URL aus diesem Repo
+geladen. Der Lauf wartet bis zum Ende seines Zeitfensters (BIS oder VORLAUF_MIN) auf fällige Einträge.
 """
-import json, os, sys, time, urllib.parse, urllib.request, urllib.error
+import json, os, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 BERLIN = ZoneInfo("Europe/Berlin")
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+SECRET = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 VERSION = os.environ.get("GRAPH_VERSION", "v23.0")
-HOST = "graph.instagram.com" if TOKEN.startswith("IG") else "graph.facebook.com"
 REPO = os.environ.get("GITHUB_REPOSITORY", "rsc7cmc9bn-cell/instagram-medien")
-SHA = os.environ.get("GITHUB_SHA", "main")
 PLAN, DONE = "plan/zeitplan.json", "plan/veroeffentlicht.json"
+TOKEN_ENC, TOKEN_STAND = "plan/token.enc", "plan/token_stand.json"
 LATE = timedelta(hours=6)  # ältere, verpasste Einträge nicht mehr nachholen
+REFRESH_EVERY = timedelta(days=7)
+TOKEN = SECRET
 
 
-def api(method, path, **params):
+def host():
+    return "graph.instagram.com" if TOKEN.startswith("IG") else "graph.facebook.com"
+
+
+def api(method, path, versioned=True, **params):
     params["access_token"] = TOKEN
-    url = f"https://{HOST}/{VERSION}/{path}"
+    url = f"https://{host()}/{VERSION + '/' if versioned else ''}{path}"
     data = urllib.parse.urlencode(params).encode()
     if method == "GET":
         req = urllib.request.Request(url + "?" + data.decode())
@@ -33,16 +42,85 @@ def api(method, path, **params):
         raise RuntimeError(f"{method} {path}: {e.code} {e.read().decode()[:500]}") from None
 
 
+def git(*args):
+    return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
+
+
+def sync():
+    """Neuesten Stand holen, damit Änderungen am Zeitplan während des Laufs greifen."""
+    try:
+        git("pull", "--rebase", "-q")
+    except subprocess.CalledProcessError as e:
+        print("Hinweis: git pull fehlgeschlagen:", e.stderr[:200])
+    return git("rev-parse", "HEAD")
+
+
+def commit(files, msg):
+    git("add", *files)
+    if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+        return
+    git("commit", "-q", "-m", msg)
+    for _ in range(3):
+        try:
+            git("pull", "--rebase", "-q")
+            git("push", "-q")
+            return
+        except subprocess.CalledProcessError:
+            time.sleep(5)
+    print("Hinweis: Push fehlgeschlagen")
+
+
+def openssl(args, data):
+    env = dict(os.environ, TK=SECRET)
+    r = subprocess.run(["openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-a", "-A", *args, "-pass", "env:TK"],
+                       input=data, capture_output=True, text=True, env=env, check=True)
+    return r.stdout.strip()
+
+
+def load_token():
+    global TOKEN
+    if os.path.exists(TOKEN_ENC):
+        TOKEN = openssl(["-d"], open(TOKEN_ENC).read().strip() + "\n")
+
+
+def refresh_token():
+    """Instagram-Login-Schlüssel verlängern (geht ab 24 Stunden Alter, verlängert auf 60 Tage)."""
+    global TOKEN
+    if not TOKEN.startswith("IG"):
+        return
+    stand = json.load(open(TOKEN_STAND)) if os.path.exists(TOKEN_STAND) else {}
+    last = stand.get("aufgefrischt")
+    now = datetime.now(BERLIN)
+    if last and now - datetime.fromisoformat(last) < REFRESH_EVERY:
+        return
+    retry = stand.get("naechster_versuch")
+    if retry and now < datetime.fromisoformat(retry):
+        return
+    try:
+        r = api("GET", "refresh_access_token", versioned=False, grant_type="ig_refresh_token")
+    except Exception as ex:
+        stand["letzter_fehler"] = f"{now.isoformat(timespec='minutes')}: {str(ex)[:200]}"
+        stand["naechster_versuch"] = (now + timedelta(days=1)).isoformat(timespec="minutes")
+        json.dump(stand, open(TOKEN_STAND, "w"), ensure_ascii=False, indent=1)
+        commit([TOKEN_STAND], "Schlüssel-Auffrischung fehlgeschlagen")
+        print("Hinweis: Auffrischen fehlgeschlagen:", str(ex)[:200])
+        return
+    TOKEN = r["access_token"]
+    with open(TOKEN_ENC, "w") as f:
+        f.write(openssl([], TOKEN) + "\n")
+    stand = {"aufgefrischt": now.isoformat(timespec="minutes"),
+             "laeuft_ab": (now + timedelta(seconds=int(r.get("expires_in", 0)))).isoformat(timespec="minutes")}
+    json.dump(stand, open(TOKEN_STAND, "w"), ensure_ascii=False, indent=1)
+    commit([TOKEN_ENC, TOKEN_STAND], "Instagram-Schlüssel aufgefrischt")
+    print("Schlüssel aufgefrischt, gültig bis", stand["laeuft_ab"])
+
+
 def ig_user_id():
     if os.environ.get("IG_USER_ID"):
         return os.environ["IG_USER_ID"]
-    if HOST == "graph.instagram.com":
+    if host() == "graph.instagram.com":
         return api("GET", "me", fields="user_id")["user_id"]
     return api("GET", "me", fields="instagram_business_account")["instagram_business_account"]["id"]
-
-
-def media_url(path):
-    return f"https://raw.githubusercontent.com/{REPO}/{SHA}/{path}"
 
 
 def wait_ready(container):
@@ -56,16 +134,17 @@ def wait_ready(container):
     raise RuntimeError(f"Container {container} nicht fertig")
 
 
-def publish(uid, e):
+def publish(uid, e, sha):
+    url = lambda p: f"https://raw.githubusercontent.com/{REPO}/{sha}/{p}"
     imgs = e["bilder"]
     if e["typ"] == "STORY":
-        c = api("POST", f"{uid}/media", media_type="STORIES", image_url=media_url(imgs[0]))["id"]
+        c = api("POST", f"{uid}/media", media_type="STORIES", image_url=url(imgs[0]))["id"]
     elif len(imgs) == 1:
-        c = api("POST", f"{uid}/media", image_url=media_url(imgs[0]), caption=e["text"])["id"]
+        c = api("POST", f"{uid}/media", image_url=url(imgs[0]), caption=e["text"])["id"]
     else:
         kids = []
         for p in imgs:
-            k = api("POST", f"{uid}/media", image_url=media_url(p), is_carousel_item="true")["id"]
+            k = api("POST", f"{uid}/media", image_url=url(p), is_carousel_item="true")["id"]
             wait_ready(k)
             kids.append(k)
         c = api("POST", f"{uid}/media", media_type="CAROUSEL", children=",".join(kids), caption=e["text"])["id"]
@@ -73,45 +152,69 @@ def publish(uid, e):
     return api("POST", f"{uid}/media_publish", creation_id=c)["id"]
 
 
-def save(done):
-    with open(DONE, "w") as f:
-        json.dump(done, f, ensure_ascii=False, indent=1)
+def run_due(uid, sha, now):
+    """Fällige Einträge veröffentlichen; liefert den nächsten offenen Termin."""
+    plan = json.load(open(PLAN))
+    done = json.load(open(DONE)) if os.path.exists(DONE) else {}
+    start = plan.get("start")
+    if not start:
+        return None, 0
+    start = datetime.fromisoformat(start).replace(tzinfo=BERLIN)
+    nxt, fehler = None, 0
+    for e in sorted(plan["eintraege"], key=lambda x: x["zeit"]):
+        t = datetime.fromisoformat(e["zeit"]).replace(tzinfo=BERLIN)
+        if e["id"] in done or e.get("entwurf") or t < start:
+            continue
+        if t > now:
+            nxt = nxt or t
+            continue
+        if now - t > LATE:
+            done[e["id"]] = {"status": "verpasst", "am": now.isoformat(timespec="minutes")}
+        else:
+            try:
+                mid = publish(uid, e, sha)
+                done[e["id"]] = {"status": "veroeffentlicht", "media_id": mid, "am": now.isoformat(timespec="minutes")}
+                print("Veröffentlicht:", e["id"], mid)
+            except Exception as ex:
+                fehler += 1
+                print("FEHLER:", e["id"], ex)
+                continue
+        with open(DONE, "w") as f:
+            json.dump(done, f, ensure_ascii=False, indent=1)
+        commit([DONE], f"Veröffentlicht: {e['id']}")
+    return nxt, fehler
+
+
+def window_end(now):
+    bis = os.environ.get("BIS", "").strip()
+    if bis:
+        h, m = map(int, bis.split(":"))
+        end = now.replace(hour=h, minute=m, second=0, microsecond=0)
+        return min(end, now + timedelta(hours=5, minutes=40))
+    return now + timedelta(minutes=int(os.environ.get("VORLAUF_MIN", "0") or 0))
 
 
 def main():
-    if not TOKEN:
+    if not SECRET:
         print("Secret IG_ACCESS_TOKEN fehlt noch, nichts zu tun.")
         return
+    load_token()
     uid = ig_user_id()
     if os.environ.get("MODUS") == "test":
         print("Konto:", api("GET", uid, fields="username"))
         print("Limit:", api("GET", f"{uid}/content_publishing_limit", fields="config,quota_usage"))
         return
-    plan = json.load(open(PLAN))
-    done = json.load(open(DONE)) if os.path.exists(DONE) else {}
-    start = plan.get("start")
-    if not start:
-        print("Kein Startzeitpunkt gesetzt, nichts zu tun.")
-        return
-    start = datetime.fromisoformat(start).replace(tzinfo=BERLIN)
-    now = datetime.now(BERLIN)
+    refresh_token()
+    end = window_end(datetime.now(BERLIN))
     fehler = 0
-    for e in sorted(plan["eintraege"], key=lambda x: x["zeit"]):
-        t = datetime.fromisoformat(e["zeit"]).replace(tzinfo=BERLIN)
-        if e["id"] in done or e.get("entwurf") or t < start or t > now:
-            continue
-        if now - t > LATE:
-            done[e["id"]] = {"status": "verpasst", "am": now.isoformat(timespec="minutes")}
-            save(done)
-            continue
-        try:
-            mid = publish(uid, e)
-            done[e["id"]] = {"status": "veroeffentlicht", "media_id": mid, "am": now.isoformat(timespec="minutes")}
-            print("Veröffentlicht:", e["id"], mid)
-        except Exception as ex:
-            fehler += 1
-            print("FEHLER:", e["id"], ex)
-        save(done)
+    while True:
+        sha = sync()
+        now = datetime.now(BERLIN)
+        nxt, f = run_due(uid, sha, now)
+        fehler += f
+        if not nxt or nxt > end:
+            break
+        time.sleep(max(0, (nxt - datetime.now(BERLIN)).total_seconds()) + 5)
     if fehler:
         sys.exit(f"{fehler} Eintrag/Einträge fehlgeschlagen")
 

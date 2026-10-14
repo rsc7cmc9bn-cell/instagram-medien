@@ -1,12 +1,18 @@
-# Veröffentlicht fällige Einträge aus plan/zeitplan.json alle 15 Minuten über die Instagram Graph API
+# Veröffentlicht fällige Einträge aus plan/zeitplan.json über die Instagram Graph API.
+# Stündlich als Sicherheitsnetz; zusätzlich startet Claude morgens und mittags einen Lauf,
+# der bis zur angegebenen Uhrzeit wartet und jeden Eintrag pünktlich veröffentlicht.
 name: Instagram veröffentlichen
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "50 * * * *"
   workflow_dispatch:
     inputs:
       modus:
         description: "test = nur Verbindung prüfen, leer = veröffentlichen"
+        required: false
+        default: ""
+      bis:
+        description: "Bis zu dieser Uhrzeit (HH:MM, Berlin) auf fällige Einträge warten"
         required: false
         default: ""
 permissions:
@@ -17,6 +23,7 @@ concurrency:
 jobs:
   veroeffentlichen:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - name: Fällige Einträge veröffentlichen
@@ -24,11 +31,9 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           MODUS: ${{ github.event.inputs.modus }}
-        run: python3 tools/veroeffentlichen.py
-      - name: Status speichern
-        if: always()
+          BIS: ${{ github.event.inputs.bis }}
+          VORLAUF_MIN: ${{ github.event_name == 'schedule' && '70' || '0' }}
         run: |
           git config user.name "instagram-planer"
           git config user.email "actions@users.noreply.github.com"
-          git add plan/veroeffentlicht.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "Veröffentlichungsstatus aktualisiert" && git pull --rebase && git push)
+          python3 tools/veroeffentlichen.py
