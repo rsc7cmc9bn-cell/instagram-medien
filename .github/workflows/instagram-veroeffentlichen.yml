@@ -1,6 +1,6 @@
 # Veröffentlicht fällige Einträge aus plan/zeitplan.json über die Instagram Graph API.
-# Stündlich als Sicherheitsnetz; zusätzlich startet Claude morgens und mittags einen Lauf,
-# der bis zur angegebenen Uhrzeit wartet und jeden Eintrag pünktlich veröffentlicht.
+# Die Läufe bilden eine Kette: Jeder wartet gut fünf Stunden und stößt dann den nächsten an.
+# Der stündliche Lauf ist nur das Sicherheitsnetz und startet die Kette neu, falls sie abreißt.
 name: Instagram veröffentlichen
 on:
   schedule:
@@ -17,8 +17,8 @@ on:
         default: ""
 permissions:
   contents: write
-  actions: read
-# Getrennte Gruppen, damit ein stündlicher Lauf nie einen wartenden Zeitfenster-Lauf verdrängt.
+  actions: write
+# Getrennte Gruppen, damit ein stündlicher Lauf nie einen wartenden Kettenlauf verdrängt.
 concurrency:
   group: instagram-${{ github.event_name == 'schedule' && 'stuendlich' || 'zeitfenster' }}
   cancel-in-progress: false
@@ -35,7 +35,8 @@ jobs:
           MODUS: ${{ github.event.inputs.modus }}
           BIS: ${{ github.event.inputs.bis }}
           GITHUB_TOKEN: ${{ github.token }}
-          VORLAUF_MIN: ${{ github.event_name == 'schedule' && '70' || '0' }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          PYTHONUNBUFFERED: "1"
         run: |
           git config user.name "instagram-planer"
           git config user.email "actions@users.noreply.github.com"

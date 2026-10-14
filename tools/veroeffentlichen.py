@@ -6,7 +6,8 @@ Skript frischt sie regelmäßig auf und legt den neuen Schlüssel verschlüsselt
 Das ursprüngliche Secret dient dabei als Passwort, im Repo liegt nie ein lesbarer Schlüssel.
 
 Bilder müssen JPEG sein und öffentlich erreichbar; sie werden per Commit-SHA-URL aus diesem Repo
-geladen. Der Lauf wartet bis zum Ende seines Zeitfensters (BIS oder VORLAUF_MIN) auf fällige Einträge.
+geladen. Jeder Lauf wartet gut fünf Stunden auf fällige Einträge und stößt dann den nächsten an (Kette);
+der stündliche Lauf startet die Kette neu, falls sie einmal abreißt.
 """
 import json, os, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import datetime, timedelta
@@ -203,50 +204,86 @@ def other_runs():
     return sorted(runs, key=lambda x: x["id"])
 
 
+KETTE = timedelta(hours=5, minutes=30)  # Länge eines Kettenlaufs, unter dem Job-Limit von 350 Minuten
+
+
+def gh_api(method, path, body=None):
+    req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/{path}", method=method,
+                                 data=json.dumps(body).encode() if body is not None else None,
+                                 headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}",
+                                          "Accept": "application/vnd.github+json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read()
+
+
+def start_next():
+    """Nächsten Kettenlauf anstoßen, falls nicht schon einer läuft oder wartet."""
+    if not os.environ.get("GITHUB_TOKEN"):
+        return
+    if [r for r in other_runs() if r["event"] == "workflow_dispatch"]:
+        print("Nächster Lauf steht schon an.")
+        return
+    try:
+        gh_api("POST", "actions/workflows/instagram-veroeffentlichen.yml/dispatches", {"ref": "main", "inputs": {"modus": ""}})
+        print("Nächster Kettenlauf angestoßen.")
+    except Exception as ex:
+        print("Hinweis: Nächster Lauf nicht angestoßen:", str(ex)[:200])
+
+
 def window_end(now):
     bis = os.environ.get("BIS", "").strip()
     if bis:
         h, m = map(int, bis.split(":"))
         end = now.replace(hour=h, minute=m, second=0, microsecond=0)
         return min(end, now + timedelta(hours=5, minutes=40))
-    return now + timedelta(minutes=int(os.environ.get("VORLAUF_MIN", "0") or 0))
+    return now + KETTE
 
 
 def main():
     if not SECRET:
         print("Secret IG_ACCESS_TOKEN fehlt noch, nichts zu tun.")
         return
-    load_token()
-    uid = ig_user_id()
     if os.environ.get("MODUS") == "test":
+        load_token()
+        uid = ig_user_id()
         print("Konto:", api("GET", uid, fields="username"))
         print("Limit:", api("GET", f"{uid}/content_publishing_limit", fields="config,quota_usage"))
         return
-    # Stündliche Sicherheitsläufe weichen, wenn ein anderer Lauf aktiv ist; gestartete Zeitfenster-Läufe
-    # warten, bis ältere Sicherheitsläufe fertig sind. So veröffentlichen nie zwei Läufe gleichzeitig.
+    # Die Läufe bilden eine Kette: Jeder wartet gut fünf Stunden auf fällige Einträge und stößt vor dem Ende
+    # den nächsten an. Der stündliche Lauf ist nur das Sicherheitsnetz: Ist kein Lauf aktiv, startet er die
+    # Kette neu. So veröffentlicht nie mehr als ein Lauf gleichzeitig, und es braucht niemanden, der startet.
     if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
         if other_runs():
-            print("Anderer Lauf aktiv, Sicherheitslauf endet.")
-            return
-    else:
-        own = int(os.environ.get("GITHUB_RUN_ID", "0"))
-        for _ in range(100):
-            if not [r for r in other_runs() if r["event"] == "schedule" and r["id"] < own and r["status"] == "in_progress"]:
-                break
-            time.sleep(60)
-    refresh_token()
+            print("Kette läuft, Sicherheitslauf endet.")
+        else:
+            print("Keine Kette aktiv, starte sie neu.")
+            start_next()
+        return
     end = window_end(datetime.now(BERLIN))
     fehler = 0
-    while True:
-        sha = sync()
-        now = datetime.now(BERLIN)
-        nxt, f = run_due(uid, sha, now)
-        fehler += f
-        if not nxt or nxt > end:
-            break
-        time.sleep(max(0, (nxt - datetime.now(BERLIN)).total_seconds()) + 5)
+    try:
+        load_token()
+        uid = ig_user_id()
+        refresh_token()
+        while True:
+            sha = sync()
+            now = datetime.now(BERLIN)
+            nxt, f = run_due(uid, sha, now)
+            fehler += f
+            if not nxt or nxt > end:
+                break
+            time.sleep(max(0, (nxt - datetime.now(BERLIN)).total_seconds()) + 5)
+    except Exception as ex:
+        fehler += 1
+        print("FEHLER im Lauf:", str(ex)[:500])
+    finally:
+        # Auch nach einem Fehler erst am Fensterende weitermachen, damit nichts im Sekundentakt neu startet.
+        rest = (end - datetime.now(BERLIN)).total_seconds()
+        if rest > 0:
+            time.sleep(rest)
+        start_next()
     if fehler:
-        sys.exit(f"{fehler} Eintrag/Einträge fehlgeschlagen")
+        sys.exit(f"{fehler} Fehler im Lauf")
 
 
 if __name__ == "__main__":
