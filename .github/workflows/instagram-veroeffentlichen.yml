@@ -17,8 +17,10 @@ on:
         default: ""
 permissions:
   contents: write
+  actions: read
+# Getrennte Gruppen, damit ein stündlicher Lauf nie einen wartenden Zeitfenster-Lauf verdrängt.
 concurrency:
-  group: instagram-veroeffentlichen
+  group: instagram-${{ github.event_name == 'schedule' && 'stuendlich' || 'zeitfenster' }}
   cancel-in-progress: false
 jobs:
   veroeffentlichen:
@@ -32,6 +34,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           MODUS: ${{ github.event.inputs.modus }}
           BIS: ${{ github.event.inputs.bis }}
+          GITHUB_TOKEN: ${{ github.token }}
           VORLAUF_MIN: ${{ github.event_name == 'schedule' && '70' || '0' }}
         run: |
           git config user.name "instagram-planer"

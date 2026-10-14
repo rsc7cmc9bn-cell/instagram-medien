@@ -185,6 +185,24 @@ def run_due(uid, sha, now):
     return nxt, fehler
 
 
+def other_runs():
+    """Andere laufende oder wartende Läufe dieses Workflows (ältere zuerst)."""
+    gh = os.environ.get("GITHUB_TOKEN")
+    if not gh:
+        return []
+    own = int(os.environ.get("GITHUB_RUN_ID", "0"))
+    runs = []
+    for status in ("in_progress", "queued"):
+        url = f"https://api.github.com/repos/{REPO}/actions/workflows/instagram-veroeffentlichen.yml/runs?status={status}&per_page=20"
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {gh}", "Accept": "application/vnd.github+json"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                runs += [x for x in json.loads(r.read())["workflow_runs"] if x["id"] != own]
+        except Exception as ex:
+            print("Hinweis: Läufe nicht abfragbar:", str(ex)[:200])
+    return sorted(runs, key=lambda x: x["id"])
+
+
 def window_end(now):
     bis = os.environ.get("BIS", "").strip()
     if bis:
@@ -204,6 +222,18 @@ def main():
         print("Konto:", api("GET", uid, fields="username"))
         print("Limit:", api("GET", f"{uid}/content_publishing_limit", fields="config,quota_usage"))
         return
+    # Stündliche Sicherheitsläufe weichen, wenn ein anderer Lauf aktiv ist; gestartete Zeitfenster-Läufe
+    # warten, bis ältere Sicherheitsläufe fertig sind. So veröffentlichen nie zwei Läufe gleichzeitig.
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+        if other_runs():
+            print("Anderer Lauf aktiv, Sicherheitslauf endet.")
+            return
+    else:
+        own = int(os.environ.get("GITHUB_RUN_ID", "0"))
+        for _ in range(100):
+            if not [r for r in other_runs() if r["event"] == "schedule" and r["id"] < own and r["status"] == "in_progress"]:
+                break
+            time.sleep(60)
     refresh_token()
     end = window_end(datetime.now(BERLIN))
     fehler = 0
