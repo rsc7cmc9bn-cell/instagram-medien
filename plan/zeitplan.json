@@ -146,7 +146,8 @@
    "bilder": [
     "jpg/storys/marktmoment/mm-2026-10-19-mythos-maengel.jpg"
    ],
-   "hinweis": "Ersetzt Reserviert-Zahl; von Lauren am 15.10. freigegeben"
+   "hinweis": "Lauren 15.10.: wird Karussell-Beitrag statt Story",
+   "entwurf": true
   },
   {
    "id": "2026-10-19-beitrag-marktpreis",
@@ -361,6 +362,23 @@
    "bilder": [
     "jpg/storys/marktmoment/mm-2026-11-13-frist-grundsteuer.jpg"
    ]
+  },
+  {
+   "id": "2026-10-23-beitrag-maengel",
+   "zeit": "2026-10-23T10:00",
+   "typ": "BEITRAG",
+   "entwurf": true,
+   "hinweis": "Wartet auf Laurens Freigabe; ersetzt dann Energieausweis am 23.10.",
+   "bilder": [
+    "jpg/beitraege/karussell-maengel/01.jpg",
+    "jpg/beitraege/karussell-maengel/02.jpg",
+    "jpg/beitraege/karussell-maengel/03.jpg",
+    "jpg/beitraege/karussell-maengel/04.jpg",
+    "jpg/beitraege/karussell-maengel/05.jpg",
+    "jpg/beitraege/karussell-maengel/06.jpg",
+    "jpg/beitraege/karussell-maengel/07.jpg"
+   ],
+   "text": "Mängel verschweigen? Keine gute Idee.\n\nFeuchter Keller, altes Dach, ein Anbau ohne Genehmigung: Bekannte Mängel gehören beim Hausverkauf auf den Tisch. Warum das so ist, wann der Gewährleistungsausschluss nicht schützt und wie Sie Mängel richtig festhalten, zeigen wir im Karussell.\n\nSpeichern Sie sich den Beitrag für später.\n\nAllgemeine Information, keine Rechtsberatung.\n\n#hausverkaufen #immobilienratgeber #maengel #immobiliensiegburg #rheinsiegkreis"
   }
  ]
 }
