@@ -63,7 +63,9 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_02_troisdorf.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "hinweis": "Reserviert: Lauren 15.10., reservierte Objekte nicht posten"
   },
   {
    "id": "2026-10-15-story-1800-4-ueber-uns_qualifikationen",
@@ -103,7 +105,9 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_05_belgisches-viertel.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "hinweis": "Reserviert: Lauren 15.10., reservierte Objekte nicht posten"
   },
   {
    "id": "2026-10-17-beitrag-kaufnebenkosten",
@@ -136,12 +140,14 @@
    ]
   },
   {
-   "id": "2026-10-19-story-0800-mm-2026-10-19-vermarktung",
+   "id": "2026-10-19-story-0800-mm-2026-10-19-mythos-maengel",
    "zeit": "2026-10-19T08:00",
    "typ": "STORY",
    "bilder": [
-    "jpg/storys/marktmoment/mm-2026-10-19-vermarktung.jpg"
-   ]
+    "jpg/storys/marktmoment/mm-2026-10-19-mythos-maengel.jpg"
+   ],
+   "entwurf": true,
+   "hinweis": "Ersetzt Reserviert-Zahl; wartet auf Laurens Freigabe"
   },
   {
    "id": "2026-10-19-beitrag-marktpreis",
