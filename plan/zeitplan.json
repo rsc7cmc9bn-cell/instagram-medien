@@ -132,6 +132,14 @@
    ]
   },
   {
+   "id": "2026-10-17-story-1700-reihe-kurioses-1-brot-salz",
+   "zeit": "2026-10-17T17:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/kurioses-1-brot-salz.jpg"
+   ]
+  },
+  {
    "id": "2026-10-18-story-1200-2-verkauft_hennef-weldergoven",
    "zeit": "2026-10-18T12:00",
    "typ": "STORY",
@@ -140,14 +148,12 @@
    ]
   },
   {
-   "id": "2026-10-19-story-0800-mm-2026-10-19-mythos-maengel",
-   "zeit": "2026-10-19T08:00",
+   "id": "2026-10-18-story-1700-reihe-maklerdeutsch-1",
+   "zeit": "2026-10-18T17:00",
    "typ": "STORY",
    "bilder": [
-    "jpg/storys/marktmoment/mm-2026-10-19-mythos-maengel.jpg"
-   ],
-   "hinweis": "Lauren 15.10.: wird Karussell-Beitrag statt Story",
-   "entwurf": true
+    "jpg/storys/reihen/maklerdeutsch-1.jpg"
+   ]
   },
   {
    "id": "2026-10-19-beitrag-marktpreis",
@@ -159,11 +165,35 @@
    "text": "Was ist Ihr Zuhause heute wert?\n\nEine Zahl aus dem Internet beantwortet diese Frage selten richtig. Wir nehmen uns deshalb Zeit für ein persönliches Gespräch, sehen uns Ihre Unterlagen an und gehen gemeinsam mit Ihnen durch die Immobilie. Im Büro bereiten wir alles auf und erklären Ihnen danach Schritt für Schritt, welcher Preis in Ihrer Lage realistisch ist.\n\nSo haben Sie eine sichere Grundlage, ganz gleich, ob Sie verkaufen möchten oder erst einmal Klarheit suchen.\n\nTermin per Nachricht.\n\n#immobilienbewertung #marktwert #hausverkaufen #immobiliensiegburg #rheinsiegkreis"
   },
   {
+   "id": "2026-10-19-story-1800-reihe-preisquiz-1-frage",
+   "zeit": "2026-10-19T18:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/preisquiz-1-frage.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-19-story-1802-reihe-preisquiz-2-aufloesung",
+   "zeit": "2026-10-19T18:02",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/preisquiz-2-aufloesung.jpg"
+   ]
+  },
+  {
    "id": "2026-10-20-story-1200-3-angebote_09_kaldauen-reh",
    "zeit": "2026-10-20T12:00",
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_09_kaldauen-reh.jpg"
+   ]
+  },
+  {
+   "id": "2026-10-20-story-1800-reihe-unsere-ecke-1-michaelsberg",
+   "zeit": "2026-10-20T18:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/unsere-ecke-1-michaelsberg.jpg"
    ]
   },
   {
@@ -192,6 +222,16 @@
    ]
   },
   {
+   "id": "2026-10-22-story-1800-reihe-umfrage-1-altbau-neubau",
+   "zeit": "2026-10-22T18:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/umfrage-1-altbau-neubau.jpg"
+   ],
+   "entwurf": true,
+   "hinweis": "Umfrage-Sticker: Lauren postet manuell nach Anleitung"
+  },
+  {
    "id": "2026-10-23-story-0800-mm-2026-10-23-zahl-grunderwerbsteuer",
    "zeit": "2026-10-23T08:00",
    "typ": "STORY",
@@ -200,13 +240,19 @@
    ]
   },
   {
-   "id": "2026-10-23-beitrag-energieausweis",
+   "id": "2026-10-23-beitrag-maengel",
    "zeit": "2026-10-23T10:00",
    "typ": "BEITRAG",
    "bilder": [
-    "jpg/beitraege/2026-10-22_ratgeber-energieausweis.jpg"
+    "jpg/beitraege/karussell-maengel/01.jpg",
+    "jpg/beitraege/karussell-maengel/02.jpg",
+    "jpg/beitraege/karussell-maengel/03.jpg",
+    "jpg/beitraege/karussell-maengel/04.jpg",
+    "jpg/beitraege/karussell-maengel/05.jpg",
+    "jpg/beitraege/karussell-maengel/06.jpg",
+    "jpg/beitraege/karussell-maengel/07.jpg"
    ],
-   "text": "Der Energieausweis beim Hausverkauf: Wann brauchen Sie ihn?\n\nSchon in der Anzeige. Wer eine Immobilie inseriert, muss die wichtigsten Angaben aus dem Energieausweis nennen, etwa Art des Ausweises, Kennwert, Energieträger und Baujahr.\n\nSpätestens bei der Besichtigung. Interessenten muss der Ausweis vorgelegt werden.\n\nNach dem Kauf. Der Käufer erhält den Ausweis im Original oder als Kopie.\n\nOb Verbrauchs- oder Bedarfsausweis, hängt vom Gebäude ab. Wir prüfen das für Sie und kümmern uns bei Bedarf um die Erstellung.\n\nSpeichern Sie sich den Beitrag für später.\n\n#energieausweis #hausverkaufen #immobilienratgeber #immobiliensiegburg #rheinsiegkreis"
+   "text": "Mängel verschweigen? Keine gute Idee.\n\nFeuchter Keller, altes Dach, ein Anbau ohne Genehmigung: Bekannte Mängel gehören beim Hausverkauf auf den Tisch. Warum das so ist, wann der Gewährleistungsausschluss nicht schützt und wie Sie Mängel richtig festhalten, zeigen wir im Karussell.\n\nSpeichern Sie sich den Beitrag für später.\n\nAllgemeine Information, keine Rechtsberatung.\n\n#hausverkaufen #immobilienratgeber #maengel #immobiliensiegburg #rheinsiegkreis"
   },
   {
    "id": "2026-10-24-story-1200-3-angebote_06_lohmar-weegen",
@@ -356,29 +402,21 @@
    "entwurf": true
   },
   {
+   "id": "2026-11-06-beitrag-energieausweis",
+   "zeit": "2026-11-06T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/2026-10-22_ratgeber-energieausweis.jpg"
+   ],
+   "text": "Der Energieausweis beim Hausverkauf: Wann brauchen Sie ihn?\n\nSchon in der Anzeige. Wer eine Immobilie inseriert, muss die wichtigsten Angaben aus dem Energieausweis nennen, etwa Art des Ausweises, Kennwert, Energieträger und Baujahr.\n\nSpätestens bei der Besichtigung. Interessenten muss der Ausweis vorgelegt werden.\n\nNach dem Kauf. Der Käufer erhält den Ausweis im Original oder als Kopie.\n\nOb Verbrauchs- oder Bedarfsausweis, hängt vom Gebäude ab. Wir prüfen das für Sie und kümmern uns bei Bedarf um die Erstellung.\n\nSpeichern Sie sich den Beitrag für später.\n\n#energieausweis #hausverkaufen #immobilienratgeber #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
    "id": "2026-11-13-story-0800-mm-2026-11-13-frist-grundsteuer",
    "zeit": "2026-11-13T08:00",
    "typ": "STORY",
    "bilder": [
     "jpg/storys/marktmoment/mm-2026-11-13-frist-grundsteuer.jpg"
    ]
-  },
-  {
-   "id": "2026-10-23-beitrag-maengel",
-   "zeit": "2026-10-23T10:00",
-   "typ": "BEITRAG",
-   "entwurf": true,
-   "hinweis": "Wartet auf Laurens Freigabe; ersetzt dann Energieausweis am 23.10.",
-   "bilder": [
-    "jpg/beitraege/karussell-maengel/01.jpg",
-    "jpg/beitraege/karussell-maengel/02.jpg",
-    "jpg/beitraege/karussell-maengel/03.jpg",
-    "jpg/beitraege/karussell-maengel/04.jpg",
-    "jpg/beitraege/karussell-maengel/05.jpg",
-    "jpg/beitraege/karussell-maengel/06.jpg",
-    "jpg/beitraege/karussell-maengel/07.jpg"
-   ],
-   "text": "Mängel verschweigen? Keine gute Idee.\n\nFeuchter Keller, altes Dach, ein Anbau ohne Genehmigung: Bekannte Mängel gehören beim Hausverkauf auf den Tisch. Warum das so ist, wann der Gewährleistungsausschluss nicht schützt und wie Sie Mängel richtig festhalten, zeigen wir im Karussell.\n\nSpeichern Sie sich den Beitrag für später.\n\nAllgemeine Information, keine Rechtsberatung.\n\n#hausverkaufen #immobilienratgeber #maengel #immobiliensiegburg #rheinsiegkreis"
   }
  ]
 }
