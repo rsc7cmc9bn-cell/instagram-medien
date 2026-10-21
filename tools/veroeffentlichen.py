@@ -285,9 +285,11 @@ def main():
             now = datetime.now(BERLIN)
             nxt, f = run_due(uid, sha, now)
             fehler += f
-            if not nxt or nxt > end:
+            if now >= end:
                 break
-            time.sleep(max(0, (nxt - datetime.now(BERLIN)).total_seconds()) + 5)
+            # Spätestens alle 15 Minuten neu abgleichen, damit auch kurzfristig eingeplante Einträge rausgehen.
+            wake = min(nxt or end, end, now + timedelta(minutes=15))
+            time.sleep(max(0, (wake - datetime.now(BERLIN)).total_seconds()) + 5)
     except Exception as ex:
         fehler += 1
         print("FEHLER im Lauf:", str(ex)[:500])
