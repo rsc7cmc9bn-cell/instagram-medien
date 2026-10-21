@@ -84,7 +84,7 @@ def load_token():
         # After a new secret is stored, the old file no longer decrypts: use the secret then.
         try:
             t = openssl(["-d"], open(TOKEN_ENC).read().strip() + "\n")
-        except subprocess.CalledProcessError:
+        except Exception:  # wrong passphrase: openssl fails or returns garbage bytes
             t = ""
         if t.startswith(("IG", "EA")):
             TOKEN = t
