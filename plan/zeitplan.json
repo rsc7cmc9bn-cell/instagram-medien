@@ -263,6 +263,14 @@
    ]
   },
   {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/kurioses-1-brot-salz.jpg"
+   ],
+   "id": "2026-10-24-story-1700-reihe-kurioses-1-brot-salz",
+   "zeit": "2026-10-24T17:00"
+  },
+  {
    "id": "2026-10-25-beitrag-mythen",
    "zeit": "2026-10-25T10:00",
    "typ": "BEITRAG",
@@ -284,6 +292,14 @@
    ]
   },
   {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/maklerdeutsch-1.jpg"
+   ],
+   "id": "2026-10-25-story-1700-reihe-maklerdeutsch-1",
+   "zeit": "2026-10-25T17:00"
+  },
+  {
    "id": "2026-10-26-story-0800-mm-2026-10-26-mythos-notar",
    "zeit": "2026-10-26T08:00",
    "typ": "STORY",
@@ -301,12 +317,58 @@
    "text": "Verkauft: Einfamilienhaus in Hennef-Weldergoven.\n\nEin freistehendes Haus mit Garagen und großem Garten, mit Sanierungsbedarf und viel Potenzial. Gerade bei solchen Immobilien kommt es auf eine ehrliche Einschätzung und die richtigen Käufer an. Danke an die Eigentümer für ihr Vertrauen.\n\nSie möchten wissen, was Ihre Immobilie in Hennef oder Umgebung wert ist? Schreiben Sie uns eine Nachricht.\n\n#verkauft #hennef #weldergoven #immobilienhennef #rheinsiegkreis"
   },
   {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/2-Verkauft_Hennef-Weldergoven.jpg"
+   ],
+   "id": "2026-10-26-story-1200-2-verkauft_hennef-weldergoven",
+   "zeit": "2026-10-26T12:00"
+  },
+  {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/preisquiz-1-frage.jpg"
+   ],
+   "id": "2026-10-26-story-1800-reihe-preisquiz-1-frage",
+   "zeit": "2026-10-26T18:00"
+  },
+  {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/preisquiz-2-aufloesung.jpg"
+   ],
+   "id": "2026-10-26-story-1802-reihe-preisquiz-2-aufloesung",
+   "zeit": "2026-10-26T18:02"
+  },
+  {
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-01.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-02.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-03.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-04.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-05.jpg",
+    "jpg/beitraege/ideen/i1-kaufnebenkosten-06.jpg"
+   ],
+   "text": "Was kostet ein Hauskauf wirklich?\n\nZum Kaufpreis kommen in NRW Grunderwerbsteuer, Notar und Grundbuch sowie meist die Maklerprovision. Bei 400.000 € Kaufpreis sind das schnell rund 48.000 €. Im Karussell zeigen wir jeden Posten und ein Rechenbeispiel.\n\nSpeichern Sie sich den Beitrag für Ihre Planung.\n\n#kaufnebenkosten #hauskaufen #grunderwerbsteuer #immobiliensiegburg #rheinsiegkreis",
+   "id": "2026-10-27-beitrag-kaufnebenkosten",
+   "zeit": "2026-10-27T10:00"
+  },
+  {
    "id": "2026-10-27-story-1200-3-angebote_04_pleiserhohn",
    "zeit": "2026-10-27T12:00",
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_04_pleiserhohn.jpg"
    ]
+  },
+  {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/unsere-ecke-1-michaelsberg.jpg"
+   ],
+   "id": "2026-10-27-story-1800-reihe-unsere-ecke-1-michaelsberg",
+   "zeit": "2026-10-27T18:00"
   },
   {
    "id": "2026-10-28-beitrag-erben",
@@ -322,6 +384,23 @@
     "jpg/beitraege/ideen/i3-erben-07.jpg"
    ],
    "text": "Das Elternhaus geerbt: Was ist jetzt zu tun?\n\nIn einer ohnehin schweren Zeit kommen viele Fragen auf. Nachweis, Grundbuch, Erbengemeinschaft, Steuer und am Ende die Frage, ob man das Haus behält oder verkauft. Wir haben die ersten Schritte für Sie zusammengefasst.\n\nWenn Sie darüber sprechen möchten, schreiben Sie uns. Vertraulich und ohne Druck.\n\n#erbimmobilie #elternhaus #erbschaft #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_08_kaldauen-dhh.jpg"
+   ],
+   "id": "2026-10-28-story-1200-3-angebote_08_kaldauen-dhh",
+   "zeit": "2026-10-28T12:00"
+  },
+  {
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/2026-10-19_marktpreis.jpg"
+   ],
+   "text": "Was ist Ihr Zuhause heute wert?\n\nEine Zahl aus dem Internet beantwortet diese Frage selten richtig. Wir nehmen uns deshalb Zeit für ein persönliches Gespräch, sehen uns Ihre Unterlagen an und gehen gemeinsam mit Ihnen durch die Immobilie. Im Büro bereiten wir alles auf und erklären Ihnen danach Schritt für Schritt, welcher Preis in Ihrer Lage realistisch ist.\n\nSo haben Sie eine sichere Grundlage, ganz gleich, ob Sie verkaufen möchten oder erst einmal Klarheit suchen.\n\nTermin per Nachricht.\n\n#immobilienbewertung #marktwert #hausverkaufen #immobiliensiegburg #rheinsiegkreis",
+   "id": "2026-10-29-beitrag-marktpreis",
+   "zeit": "2026-10-29T10:00"
   },
   {
    "id": "2026-10-29-story-1200-3-angebote_03_porz-langel",
@@ -347,6 +426,14 @@
     "jpg/beitraege/von-frau-zu-frau.jpg"
    ],
    "text": "Manche Entscheidungen bespricht man lieber mit einer Frau.\n\nTrennung, Erbschaft oder Familienzuwachs: Solche Lebensphasen bringen oft auch eine Entscheidung über das eigene Zuhause mit sich. Ich höre zu, ordne die Möglichkeiten ein und begleite Sie in Ihrem Tempo. Vertraulich und ohne Druck.\n\nWenn Sie ein erstes Gespräch möchten, schreiben Sie mir eine Nachricht.\n\nBritta Nießen\n\n#vonfrauzufrau #erbimmobilie #trennung #immobiliensiegburg #rheinsiegkreis"
+  },
+  {
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Angebote_09_kaldauen-reh.jpg"
+   ],
+   "id": "2026-10-30-story-1200-3-angebote_09_kaldauen-reh",
+   "zeit": "2026-10-30T12:00"
   },
   {
    "id": "2026-10-31-story-1200-2-verkauft_swisttal-ollheim",
