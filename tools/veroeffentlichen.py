@@ -81,7 +81,15 @@ def openssl(args, data):
 def load_token():
     global TOKEN
     if os.path.exists(TOKEN_ENC):
-        TOKEN = openssl(["-d"], open(TOKEN_ENC).read().strip() + "\n")
+        # After a new secret is stored, the old file no longer decrypts: use the secret then.
+        try:
+            t = openssl(["-d"], open(TOKEN_ENC).read().strip() + "\n")
+        except subprocess.CalledProcessError:
+            t = ""
+        if t.startswith(("IG", "EA")):
+            TOKEN = t
+        else:
+            print("Gespeicherter Schlüssel passt nicht zum Secret, nutze das Secret.")
 
 
 def refresh_token():
