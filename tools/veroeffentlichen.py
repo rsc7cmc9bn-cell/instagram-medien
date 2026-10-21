@@ -132,8 +132,8 @@ def ig_user_id():
     return api("GET", "me", fields="instagram_business_account")["instagram_business_account"]["id"]
 
 
-def wait_ready(container):
-    for _ in range(30):
+def wait_ready(container, tries=30):
+    for _ in range(tries):
         s = api("GET", container, fields="status_code").get("status_code")
         if s == "FINISHED":
             return
@@ -146,6 +146,13 @@ def wait_ready(container):
 def publish(uid, e, sha):
     url = lambda p: f"https://raw.githubusercontent.com/{REPO}/{sha}/{p}"
     imgs = e["bilder"]
+    if e["typ"] == "REEL":
+        # bilder[0] = MP4 (H.264/AAC, 9:16), optional bilder[1] = Titelbild
+        extra = {"cover_url": url(imgs[1])} if len(imgs) > 1 else {}
+        c = api("POST", f"{uid}/media", media_type="REELS", video_url=url(imgs[0]), caption=e["text"],
+                share_to_feed="true", **extra)["id"]
+        wait_ready(c, tries=120)  # Videos brauchen bei Meta einige Minuten
+        return api("POST", f"{uid}/media_publish", creation_id=c)["id"]
     if e["typ"] == "STORY":
         c = api("POST", f"{uid}/media", media_type="STORIES", image_url=url(imgs[0]))["id"]
     elif len(imgs) == 1:
