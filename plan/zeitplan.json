@@ -238,7 +238,8 @@
     "jpg/storys/3-Angebote_07_seelscheid.jpg"
    ],
    "geloescht": true,
-   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)"
+   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)",
+   "entwurf": true
   },
   {
    "id": "2026-10-22-story-1800-reihe-umfrage-1-altbau-neubau",
@@ -288,7 +289,8 @@
     "jpg/storys/3-Angebote_06_lohmar-weegen.jpg"
    ],
    "geloescht": true,
-   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)"
+   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)",
+   "entwurf": true
   },
   {
    "typ": "STORY",
@@ -315,7 +317,8 @@
     "jpg/storys/1-Bewertung_Marktpreiseinschaetzung.jpg"
    ],
    "geloescht": true,
-   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)"
+   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)",
+   "entwurf": true
   },
   {
    "typ": "STORY",
@@ -341,7 +344,8 @@
    "id": "2026-10-26-story-1200-2-verkauft_hennef-weldergoven",
    "zeit": "2026-10-26T12:00",
    "geloescht": true,
-   "hinweis": "Doppelt: schon am 14.10. gepostet (Lauren 22.10: keine Doppelposts)"
+   "hinweis": "Doppelt: schon am 14.10. gepostet (Lauren 22.10: keine Doppelposts)",
+   "entwurf": true
   },
   {
    "typ": "STORY",
@@ -467,7 +471,8 @@
     "jpg/storys/2-Verkauft_Swisttal-Ollheim.jpg"
    ],
    "geloescht": true,
-   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)"
+   "hinweis": "Doppelt: schon am 15.10. gepostet (Lauren 22.10: keine Doppelposts)",
+   "entwurf": true
   },
   {
    "id": "2026-11-01-beitrag-energieausweis",

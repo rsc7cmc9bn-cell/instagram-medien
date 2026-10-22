@@ -179,7 +179,7 @@ def run_due(uid, sha, now):
     nxt, fehler = None, 0
     for e in sorted(plan["eintraege"], key=lambda x: x["zeit"]):
         t = datetime.fromisoformat(e["zeit"]).replace(tzinfo=BERLIN)
-        if e["id"] in done or e.get("entwurf") or t < start:
+        if e["id"] in done or e.get("entwurf") or e.get("geloescht") or t < start:
             continue
         if t > now:
             nxt = nxt or t
