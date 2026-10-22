@@ -1,0 +1,28 @@
+# Lädt den Objektbestand der Website (gerendert) und legt ihn im Branch website-daten ab.
+# Grund: Die Claude-Umgebung erreicht immobilien-britta-niessen.de nicht direkt.
+name: Website abgleichen
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  abgleich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Browser installieren
+        run: npm i --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
+      - name: Website laden
+        run: node tools/website_abgleich.js
+      - name: Ergebnis ablegen
+        run: |
+          git config user.name "website-abgleich"
+          git config user.email "actions@github.com"
+          git checkout -B website-daten
+          git add -f website
+          git commit -qm "Website-Stand $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin website-daten
