@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       modus:
-        description: "test = nur Verbindung prüfen, leer = veröffentlichen"
+        description: "test = nur Verbindung prüfen, alarmtest = Testwarnung, leer = veröffentlichen"
         required: false
         default: ""
       bis:
@@ -18,9 +18,10 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 # Getrennte Gruppen, damit ein stündlicher Lauf nie einen wartenden Kettenlauf verdrängt.
 concurrency:
-  group: instagram-${{ github.event_name == 'schedule' && 'stuendlich' || 'zeitfenster' }}
+  group: instagram-${{ github.event_name == 'schedule' && 'stuendlich' || (github.event.inputs.modus == 'alarmtest' && 'alarmtest' || 'zeitfenster') }}
   cancel-in-progress: false
 jobs:
   veroeffentlichen:

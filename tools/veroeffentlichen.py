@@ -186,14 +186,17 @@ def run_due(uid, sha, now):
             continue
         if now - t > LATE:
             done[e["id"]] = {"status": "verpasst", "am": now.isoformat(timespec="minutes")}
+            alarm("verpasst:" + e["id"], f"Nicht veröffentlicht und jetzt verpasst: {e['id']} (geplant {e['zeit']}).")
         else:
             try:
                 mid = publish(uid, e, sha)
                 done[e["id"]] = {"status": "veroeffentlicht", "media_id": mid, "am": now.isoformat(timespec="minutes")}
                 print("Veröffentlicht:", e["id"], mid)
+                alarm_aufheben()
             except Exception as ex:
                 fehler += 1
                 print("FEHLER:", e["id"], ex)
+                alarm("fehler:" + e["id"], f"Fehler bei {e['id']} (geplant {e['zeit']}): {str(ex)[:300]}")
                 continue
         with open(DONE, "w") as f:
             json.dump(done, f, ensure_ascii=False, indent=1)
@@ -231,6 +234,50 @@ def gh_api(method, path, body=None):
         return r.read()
 
 
+ALARM_LABEL = "instagram-alarm"
+_alarmiert = set()
+
+
+def offener_alarm():
+    try:
+        return json.loads(gh_api("GET", f"issues?labels={ALARM_LABEL}&state=open&per_page=5"))
+    except Exception as ex:
+        print("Hinweis: Alarm-Issues nicht abfragbar:", str(ex)[:200])
+        return []
+
+
+def alarm(schluessel, text):
+    """Meldet einen Fehler als GitHub-Issue. GitHub schickt dem Konto dazu eine E-Mail, auch ohne Claude."""
+    if not os.environ.get("GITHUB_TOKEN") or schluessel in _alarmiert:
+        return
+    _alarmiert.add(schluessel)
+    jetzt = datetime.now(BERLIN).strftime("%d.%m. %H:%M")
+    try:
+        offen = offener_alarm()
+        if offen:
+            gh_api("POST", f"issues/{offen[0]['number']}/comments", {"body": f"{jetzt}: {text}"})
+        else:
+            gh_api("POST", "issues", {"title": "Instagram: Veröffentlichung hakt", "labels": [ALARM_LABEL], "body":
+                f"{jetzt}: {text}\n\nWas tun: Steht oben \"API access blocked\" oder etwas mit Token, bitte in Meta unter "
+                "Anwendungsfälle > Instagram > API-Einrichtung einen neuen Token erzeugen und das GitHub-Secret IG_ACCESS_TOKEN ersetzen. "
+                "Sonst einfach Claude im Projekt Bescheid geben. Sobald wieder etwas veröffentlicht wird, schließt sich dieser Hinweis von selbst."})
+        print("Alarm gemeldet:", schluessel)
+    except Exception as ex:
+        print("Hinweis: Alarm nicht gemeldet:", str(ex)[:200])
+
+
+def alarm_aufheben():
+    if not os.environ.get("GITHUB_TOKEN"):
+        return
+    for i in offener_alarm():
+        try:
+            gh_api("POST", f"issues/{i['number']}/comments", {"body": "Es wird wieder veröffentlicht. Hinweis erledigt."})
+            gh_api("PATCH", f"issues/{i['number']}", {"state": "closed"})
+            print("Alarm aufgehoben:", i["number"])
+        except Exception as ex:
+            print("Hinweis: Alarm nicht geschlossen:", str(ex)[:200])
+
+
 def start_next():
     """Nächsten Kettenlauf anstoßen, falls nicht schon einer läuft oder wartet."""
     if not os.environ.get("GITHUB_TOKEN"):
@@ -257,6 +304,11 @@ def window_end(now):
 def main():
     if not SECRET:
         print("Secret IG_ACCESS_TOKEN fehlt noch, nichts zu tun.")
+        return
+    if os.environ.get("MODUS") == "alarmtest":
+        alarm("test", "Testalarm: So sieht eine Warnung aus, wenn das Posten hakt. Alles in Ordnung, dieser Hinweis schließt sich gleich wieder.")
+        time.sleep(20)
+        alarm_aufheben()
         return
     if os.environ.get("MODUS") == "test":
         load_token()
@@ -293,6 +345,7 @@ def main():
     except Exception as ex:
         fehler += 1
         print("FEHLER im Lauf:", str(ex)[:500])
+        alarm("lauf", f"Der Veröffentlichungslauf ist abgebrochen: {str(ex)[:300]}")
     finally:
         # Auch nach einem Fehler erst am Fensterende weitermachen, damit nichts im Sekundentakt neu startet.
         rest = (end - datetime.now(BERLIN)).total_seconds()
