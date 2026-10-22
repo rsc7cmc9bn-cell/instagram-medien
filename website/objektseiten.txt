@@ -1,0 +1,6 @@
+objekt-01	https://immobilien-britta-niessen.de/suchprofil
+objekt-02	https://immobilien-britta-niessen.de/immobilie-verkaufen-siegburg
+objekt-03	https://immobilien-britta-niessen.de/immobilienbewertung-siegburg
+objekt-04	https://immobilien-britta-niessen.de/immobilie-vermieten-siegburg
+objekt-05	https://immobilien-britta-niessen.de/impressum
+objekt-06	https://immobilien-britta-niessen.de/datenschutz
