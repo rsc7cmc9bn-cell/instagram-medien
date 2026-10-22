@@ -1,0 +1,24 @@
+# Holt die veröffentlichten Beiträge samt Vorschaubildern und legt sie im Branch profil-daten ab.
+name: Profil abrufen
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  abruf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Beiträge laden
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 tools/profil_abruf.py
+      - name: Ergebnis ablegen
+        run: |
+          git config user.name "profil-abruf"
+          git config user.email "actions@github.com"
+          git checkout -B profil-daten
+          git add -f profil
+          git commit -qm "Profil-Stand $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin profil-daten
