@@ -254,5 +254,10 @@
   "status": "veroeffentlicht",
   "media_id": "18083046209710939",
   "am": "2026-10-29T08:00+01:00"
+ },
+ "2026-10-29-beitrag-besichtigung": {
+  "status": "veroeffentlicht",
+  "media_id": "18026028461925028",
+  "am": "2026-10-29T10:00+01:00"
  }
 }
