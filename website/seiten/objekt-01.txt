@@ -1,0 +1,62 @@
+Immobilien
+Britta Nießen
+Ihr Suchauftrag
+
+Beschreiben Sie Ihr Wunschobjekt. Alle Suchangaben sind freiwillig; auch mit einzelnen Angaben können Sie Ihren Suchauftrag abgeben. Passende Angebote erhalten Sie nur, wenn Sie dies unten auswählen.
+
+Ihr Wunschobjekt (freiwillig)
+Kaufen oder mieten?
+Kaufen
+Mieten
+Objektart
+Keine Festlegung
+Einfamilienhaus
+Zweifamilienhaus
+Eigentumswohnung
+Kapitalanlage
+Haustyp
+Keine Festlegung
+Freistehend
+Reihenhaus
+Reihenendhaus
+Doppelhaus / Doppelhaushälfte
+Nur bei Haussuche relevant.
+Kapitalanlage – Objektart
+Keine Festlegung
+Mehrfamilienhaus
+Eigentumswohnung
+Nur bei Kapitalanlage relevant.
+Suchorte
+Mehrere Orte bitte mit Komma trennen.
+Preis & Größe (freiwillig)
+
+Beim Kaufen gilt der Kaufpreis, beim Mieten die monatliche Kaltmiete.
+
+Preis von (€)
+Preis bis (€)
+Zimmer mindestens
+Zimmer höchstens
+Wohnfläche mindestens (m²)
+Wie viele Personen suchen ein Zuhause?
+Hilft uns bei der Beratung.
+Ausstattungswünsche (freiwillig)
+Gewünschte Ausstattung
+Garten
+Balkon
+Terrasse
+Garage
+Stellplatz
+Aufzug
+Barrierearm/barrierefrei
+Einbauküche
+Keller
+Weitere Wünsche (Freitext)
+Ihre Kontaktdaten
+Vorname (optional)
+Nachname (optional)
+E-Mail (Pflichtangabe)
+Telefon (optional)
+Website 
+Ich habe die Datenschutzhinweise zur Kenntnis genommen. (Pflichtangabe)
+Ich möchte passende Immobilienangebote per E-Mail erhalten. Ich kann diese Auswahl jederzeit widerrufen.
+Suchauftrag abgeben
