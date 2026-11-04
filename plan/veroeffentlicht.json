@@ -329,5 +329,10 @@
   "status": "veroeffentlicht",
   "media_id": "18080321327475264",
   "am": "2026-11-04T08:00+01:00"
+ },
+ "2026-11-04-beitrag-magazin-03": {
+  "status": "veroeffentlicht",
+  "media_id": "18055482107661453",
+  "am": "2026-11-04T10:00+01:00"
  }
 }
