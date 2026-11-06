@@ -823,7 +823,9 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_04_pleiserhohn.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "hinweis": "06.11.: Pleiserhohn in Propstack Reserviert"
   },
   {
    "id": "2026-11-06-story-1730-reihe-maklerdeutsch-3",
