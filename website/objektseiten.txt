@@ -1,0 +1,13 @@
+objekt-01	https://immobilien-britta-niessen.de/suchprofil
+objekt-02	https://immobilien-britta-niessen.de/immobilien/mehrfamilienhaus-koeln-5480035
+objekt-03	https://immobilien-britta-niessen.de/immobilien/doppelhaushaelfte-siegburg-5880701
+objekt-04	https://immobilien-britta-niessen.de/immobilien/reihenendhaus-siegburg-5988407
+objekt-05	https://immobilien-britta-niessen.de/immobilien/haus-lohmar-6156215
+objekt-06	https://immobilien-britta-niessen.de/immobilien/dachgeschosswohnung-koeln-6286782
+objekt-07	https://immobilien-britta-niessen.de/immobilien/einfamilienhaus-niederkassel-6286887
+objekt-08	https://immobilien-britta-niessen.de/immobilien/einfamilienhaus-neunkirchen-seelscheid-5478721
+objekt-09	https://immobilien-britta-niessen.de/immobilie-verkaufen-siegburg
+objekt-10	https://immobilien-britta-niessen.de/immobilienbewertung-siegburg
+objekt-11	https://immobilien-britta-niessen.de/immobilie-vermieten-siegburg
+objekt-12	https://immobilien-britta-niessen.de/impressum
+objekt-13	https://immobilien-britta-niessen.de/datenschutz
