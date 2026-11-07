@@ -901,7 +901,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_08_kaldauen-dhh.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-09-story-0800-mm-2026-11-09-mythos-handschlag",
@@ -945,7 +948,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_09_kaldauen-reh.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-11-story-0800-mm-2026-11-11-zahl-zwei-wochen",
@@ -961,7 +967,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/2-Verkauft_Swisttal-Ollheim.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-12-beitrag-kaufen-verkaufen",
@@ -983,7 +992,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_06_lohmar-weegen.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-13-story-0800-mm-2026-11-13-frist-grundsteuer",
@@ -999,7 +1011,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_07_seelscheid.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-14-beitrag-winter-check",
@@ -1021,7 +1036,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_05_belgisches-viertel.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-14-story-1730-reihe-maklerdeutsch-4",
@@ -1037,7 +1055,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_08_kaldauen-dhh.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-16-beitrag-grundriss-lesen",
@@ -1059,7 +1080,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_06_lohmar-weegen.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-17-story-1200-3-angebote_10_uckendorf",
@@ -1067,7 +1091,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_10_uckendorf.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-17-story-1730-reihe-kurioses-4-hufeisen",
@@ -1105,7 +1132,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_07_seelscheid.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-19-story-1200-3-angebote_09_kaldauen-reh",
@@ -1113,7 +1143,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/3-Angebote_09_kaldauen-reh.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
    "id": "2026-11-20-beitrag-wertfaktoren",
@@ -1135,7 +1168,10 @@
    "typ": "STORY",
    "bilder": [
     "jpg/storys/2-Verkauft_Hennef-Weldergoven.jpg"
-   ]
+   ],
+   "entwurf": true,
+   "geloescht": true,
+   "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   }
  ]
 }
