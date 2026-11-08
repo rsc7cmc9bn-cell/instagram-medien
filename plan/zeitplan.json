@@ -915,32 +915,14 @@
    ]
   },
   {
-   "id": "2026-11-09-beitrag-angebot-uckendorf",
-   "zeit": "2026-11-09T10:00",
-   "typ": "BEITRAG",
-   "bilder": [
-    "jpg/beitraege/objekte/uckendorf-01.jpg",
-    "jpg/beitraege/objekte/uckendorf-02.jpg",
-    "jpg/beitraege/objekte/uckendorf-03.jpg",
-    "jpg/beitraege/objekte/uckendorf-04.jpg"
-   ],
-   "text": "Neu im Angebot: Doppelhaushälfte mit Photovoltaik in Niederkassel-Uckendorf.\n\n5 Zimmer, 112 m² Wohnfläche, 216 m² Grundstück, Garage und Keller. Die Photovoltaikanlage wird mitverkauft, die Gas-Brennwerttherme ist von 2024. Wischen Sie durch die Bilder.\n\nKaufpreis 379.000 €. Verbrauchsausweis, 92,9 kWh/(m²a), Gas, Baujahr 1992, Klasse C. Käuferprovision 3,57 % inkl. MwSt.\n\nDas Exposé senden wir Ihnen gern per Nachricht.\n\n#niederkassel #doppelhaushälfte #hauskaufen #photovoltaik #immobiliensiegburg #rheinsiegkreis",
-   "entwurf": true,
-   "hinweis": "Wartet auf Laurens Entscheidung (Beitrag jetzt oder erst das Reel)"
-  },
-  {
-   "id": "2026-11-10-beitrag-verkaufsfertig",
+   "id": "2026-11-10-reel-maklerdeutsch-1",
    "zeit": "2026-11-10T10:00",
-   "typ": "BEITRAG",
+   "typ": "REEL",
    "bilder": [
-    "jpg/beitraege/ideen/i7-verkaufsfertig-01.jpg",
-    "jpg/beitraege/ideen/i7-verkaufsfertig-02.jpg",
-    "jpg/beitraege/ideen/i7-verkaufsfertig-03.jpg",
-    "jpg/beitraege/ideen/i7-verkaufsfertig-04.jpg",
-    "jpg/beitraege/ideen/i7-verkaufsfertig-05.jpg",
-    "jpg/beitraege/ideen/i7-verkaufsfertig-06.jpg"
+    "jpg/reels/maklerdeutsch-1.mp4",
+    "jpg/reels/maklerdeutsch-1-cover.jpg"
    ],
-   "text": "Bevor der Fotograf kommt: vier Dinge, die Ihr Haus verkaufsfertig machen.\n\nWeniger Dinge, kleine Reparaturen, viel Licht und ein gepflegter Eingang. Das kostet wenig und macht auf den Fotos und bei der Besichtigung einen großen Unterschied. Wischen Sie durch die Bilder.\n\n#hausverkaufen #immobilienverkauf #homestaging #immobiliensiegburg #rheinsiegkreis"
+   "text": "Maklerdeutsch, übersetzt.\n\n„Verkehrsgünstig gelegen“, „viel Potenzial“, „pflegeleichter Garten“: In Immobilienanzeigen klingt vieles schöner, als es ist. Wir übersetzen die Klassiker, aus Siegburg und dem Rhein-Sieg-Kreis.\n\nWelchen Begriff sollen wir als Nächstes übersetzen? Schreiben Sie ihn in die Kommentare.\n\nMusik: Scott Joplin, „The Entertainer“ (1902), gemeinfrei.\n\n#maklerdeutsch #immobilien #hauskaufen #hausverkaufen #rheinsiegkreis"
   },
   {
    "id": "2026-11-10-story-1200-3-angebote_09_kaldauen-reh",
@@ -952,6 +934,14 @@
    "entwurf": true,
    "geloescht": true,
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
+  },
+  {
+   "id": "2026-11-10-story-1730-reihe-maklerdeutsch-4",
+   "zeit": "2026-11-10T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/maklerdeutsch-4.jpg"
+   ]
   },
   {
    "id": "2026-11-11-story-0800-mm-2026-11-11-zahl-zwei-wochen",
@@ -973,6 +963,18 @@
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
+   "id": "2026-11-12-beitrag-angebot-uckendorf",
+   "zeit": "2026-11-12T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/objekte/uckendorf-01.jpg",
+    "jpg/beitraege/objekte/uckendorf-02.jpg",
+    "jpg/beitraege/objekte/uckendorf-03.jpg",
+    "jpg/beitraege/objekte/uckendorf-04.jpg"
+   ],
+   "text": "Neu im Angebot: Doppelhaushälfte mit Photovoltaik in Niederkassel-Uckendorf.\n\n5 Zimmer, 112 m² Wohnfläche, 216 m² Grundstück, Garage und Keller. Die Photovoltaikanlage wird mitverkauft, die Gas-Brennwerttherme ist von 2024. Wischen Sie durch die Bilder.\n\nKaufpreis 379.000 €. Verbrauchsausweis, 92,9 kWh/(m²a), Gas, Baujahr 1992, Klasse C. Käuferprovision 3,57 % inkl. MwSt.\n\nDas Exposé senden wir Ihnen gern per Nachricht.\n\n#niederkassel #doppelhaushälfte #hauskaufen #photovoltaik #rheinsiegkreis"
+  },
+  {
    "id": "2026-11-12-beitrag-kaufen-verkaufen",
    "zeit": "2026-11-12T10:00",
    "typ": "BEITRAG",
@@ -984,7 +986,9 @@
     "jpg/beitraege/ideen/i8-kaufen-verkaufen-05.jpg",
     "jpg/beitraege/ideen/i8-kaufen-verkaufen-06.jpg"
    ],
-   "text": "Neues Zuhause gefunden, das alte noch nicht verkauft? Diese Frage hören wir oft.\n\nErst verkaufen oder erst kaufen: Beides hat Vor- und Nachteile. Am entspanntesten wird es, wenn beide Termine zueinander passen. Wischen Sie durch die Bilder.\n\nAllgemeine Information, keine Finanzierungsberatung.\n\n#hausverkaufen #hauskaufen #umzug #immobiliensiegburg #rheinsiegkreis"
+   "text": "Neues Zuhause gefunden, das alte noch nicht verkauft? Diese Frage hören wir oft.\n\nErst verkaufen oder erst kaufen: Beides hat Vor- und Nachteile. Am entspanntesten wird es, wenn beide Termine zueinander passen. Wischen Sie durch die Bilder.\n\nAllgemeine Information, keine Finanzierungsberatung.\n\n#hausverkaufen #hauskaufen #umzug #immobiliensiegburg #rheinsiegkreis",
+   "entwurf": true,
+   "hinweis": "Reserve für Donnerstag-Ratgeber. 08.11.: neuer Wochenrhythmus (Lauren, Plan Instagram-Wachstum)"
   },
   {
    "id": "2026-11-12-story-1200-3-angebote_06_lohmar-weegen",
@@ -996,6 +1000,14 @@
    "entwurf": true,
    "geloescht": true,
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
+  },
+  {
+   "id": "2026-11-12-story-1730-reihe-kurioses-4-hufeisen",
+   "zeit": "2026-11-12T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/kurioses-4-hufeisen.jpg"
+   ]
   },
   {
    "id": "2026-11-13-story-0800-mm-2026-11-13-frist-grundsteuer",
@@ -1028,7 +1040,9 @@
     "jpg/beitraege/ideen/i10-winter-05.jpg",
     "jpg/beitraege/ideen/i10-winter-06.jpg"
    ],
-   "text": "Bevor der Frost kommt: vier Dinge, die Sie jetzt am Haus prüfen sollten.\n\nAußenwasserhähne, Dachrinnen, Heizung, Fenster und Türen. Das dauert nur einen Nachmittag und schützt vor teuren Schäden. Wischen Sie durch die Bilder.\n\n#hausundgarten #wintercheck #eigenheim #immobiliensiegburg #rheinsiegkreis"
+   "text": "Bevor der Frost kommt: vier Dinge, die Sie jetzt am Haus prüfen sollten.\n\nAußenwasserhähne, Dachrinnen, Heizung, Fenster und Türen. Das dauert nur einen Nachmittag und schützt vor teuren Schäden. Wischen Sie durch die Bilder.\n\n#hausundgarten #wintercheck #eigenheim #immobiliensiegburg #rheinsiegkreis",
+   "entwurf": true,
+   "hinweis": "Reserve für Donnerstag-Ratgeber. 08.11.: neuer Wochenrhythmus (Lauren, Plan Instagram-Wachstum)"
   },
   {
    "id": "2026-11-14-story-1200-3-angebote_05_belgisches-viertel",
@@ -1042,12 +1056,30 @@
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
-   "id": "2026-11-14-story-1730-reihe-maklerdeutsch-4",
+   "id": "2026-11-14-story-1730-mm-begriff-uebergabeprotokoll",
    "zeit": "2026-11-14T17:30",
    "typ": "STORY",
    "bilder": [
-    "jpg/storys/reihen/maklerdeutsch-4.jpg"
+    "jpg/storys/marktmoment/mm-2026-11-18-begriff-uebergabeprotokoll.jpg"
    ]
+  },
+  {
+   "id": "2026-11-15-beitrag-magazin-07",
+   "zeit": "2026-11-15T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/magazin/mag07-01.jpg",
+    "jpg/beitraege/magazin/mag07-02.jpg",
+    "jpg/beitraege/magazin/mag07-03.jpg",
+    "jpg/beitraege/magazin/mag07-04.jpg",
+    "jpg/beitraege/magazin/mag07-05.jpg",
+    "jpg/beitraege/magazin/mag07-06.jpg",
+    "jpg/beitraege/magazin/mag07-07.jpg",
+    "jpg/beitraege/magazin/mag07-08.jpg",
+    "jpg/beitraege/magazin/mag07-09.jpg",
+    "jpg/beitraege/magazin/mag07-10.jpg"
+   ],
+   "text": "Elternhaus geerbt im Rhein-Sieg-Kreis: die ersten drei Schritte. Das Immobilienmagazin, Ausgabe 07.\n\nAußerdem in dieser Ausgabe: der Leitzins, Königswinter als Ort der Woche, der Begriff Nießbrauch und die Geschichte der Fenstersteuer.\n\nAllgemeine Information, keine Rechts- oder Steuerberatung.\n\nWischen Sie durch die Bilder und speichern Sie die Ausgabe für später. Jeden Sonntag erscheint eine neue Ausgabe.\n\n#immobilienmagazin #erbschaft #hausverkaufen #rheinsiegkreis #siegburg"
   },
   {
    "id": "2026-11-15-story-1200-3-angebote_08_kaldauen-dhh",
@@ -1061,6 +1093,34 @@
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
+   "id": "2026-11-15-story-1200-magazin-07-neu",
+   "zeit": "2026-11-15T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/magazin/mag07-neu.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-15-reel-magazin-07-teaser",
+   "zeit": "2026-11-15T17:00",
+   "typ": "REEL",
+   "bilder": [
+    "jpg/reels/magazin-07-teaser.mp4",
+    "jpg/reels/magazin-07-teaser-cover.jpg"
+   ],
+   "text": "Das Immobilienmagazin, Ausgabe 07, ist da: Elternhaus geerbt, der Leitzins, Königswinter und die Fenstersteuer. Die ganze Ausgabe finden Sie in unserem Feed.\n\nMusik: W. A. Mozart, „Eine kleine Nachtmusik“, 1. Satz (Musopen, gemeinfrei).\n\n#immobilienmagazin #immobilien #rheinsiegkreis"
+  },
+  {
+   "id": "2026-11-16-story-0800-magazin-07-seite",
+   "zeit": "2026-11-16T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/magazin/mag07-seite-fenstersteuer.jpg"
+   ],
+   "text": ""
+  },
+  {
    "id": "2026-11-16-beitrag-grundriss-lesen",
    "zeit": "2026-11-16T10:00",
    "typ": "BEITRAG",
@@ -1072,7 +1132,9 @@
     "jpg/beitraege/ideen/i11-grundriss-05.jpg",
     "jpg/beitraege/ideen/i11-grundriss-06.jpg"
    ],
-   "text": "Einen Grundriss richtig lesen: vier Dinge, auf die es ankommt.\n\nMaßstab, Himmelsrichtung, Wege im Haus und Stellflächen. So erkennen Sie schon vor der Besichtigung, ob ein Haus zu Ihnen passt. Wischen Sie durch die Bilder.\n\n#grundriss #hauskaufen #wohnungkaufen #immobiliensiegburg #rheinsiegkreis"
+   "text": "Einen Grundriss richtig lesen: vier Dinge, auf die es ankommt.\n\nMaßstab, Himmelsrichtung, Wege im Haus und Stellflächen. So erkennen Sie schon vor der Besichtigung, ob ein Haus zu Ihnen passt. Wischen Sie durch die Bilder.\n\n#grundriss #hauskaufen #wohnungkaufen #immobiliensiegburg #rheinsiegkreis",
+   "entwurf": true,
+   "hinweis": "Reserve für Donnerstag-Ratgeber. 08.11.: neuer Wochenrhythmus (Lauren, Plan Instagram-Wachstum)"
   },
   {
    "id": "2026-11-16-story-1200-3-angebote_06_lohmar-weegen",
@@ -1086,6 +1148,16 @@
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
+   "id": "2026-11-17-reel-mythos-oder-fakt-1",
+   "zeit": "2026-11-17T10:00",
+   "typ": "REEL",
+   "bilder": [
+    "jpg/reels/mythos-oder-fakt-1.mp4",
+    "jpg/reels/mythos-oder-fakt-1-cover.jpg"
+   ],
+   "text": "Mythos oder Fakt? Vier Sätze über Immobilien, die fast jeder schon gehört hat. Raten Sie mit, bevor die Antwort kommt.\n\nWie viele hatten Sie richtig? Schreiben Sie es in die Kommentare.\n\nAllgemeine Information, keine Rechtsberatung.\n\nMusik: Erik Satie, Gymnopédie Nr. 1, gespielt von Michael Laucke, gemeinfrei.\n\n#mythosoderfakt #immobilien #hauskaufen #hausverkaufen #rheinsiegkreis"
+  },
+  {
    "id": "2026-11-17-story-1200-3-angebote_10_uckendorf",
    "zeit": "2026-11-17T12:00",
    "typ": "STORY",
@@ -1095,22 +1167,6 @@
    "entwurf": true,
    "geloescht": true,
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
-  },
-  {
-   "id": "2026-11-17-story-1730-reihe-kurioses-4-hufeisen",
-   "zeit": "2026-11-17T17:30",
-   "typ": "STORY",
-   "bilder": [
-    "jpg/storys/reihen/kurioses-4-hufeisen.jpg"
-   ]
-  },
-  {
-   "id": "2026-11-18-story-0800-mm-2026-11-18-begriff-uebergabeprotokoll",
-   "zeit": "2026-11-18T08:00",
-   "typ": "STORY",
-   "bilder": [
-    "jpg/storys/marktmoment/mm-2026-11-18-begriff-uebergabeprotokoll.jpg"
-   ]
   },
   {
    "id": "2026-11-18-beitrag-besichtigung-verkauf",
@@ -1124,7 +1180,9 @@
     "jpg/beitraege/ideen/i12-besichtigung-verkauf-05.jpg",
     "jpg/beitraege/ideen/i12-besichtigung-verkauf-06.jpg"
    ],
-   "text": "Besichtigung im eigenen Haus? So zeigt es sich von seiner besten Seite.\n\nFrische Luft, viel Licht, Ruhe und die wichtigsten Unterlagen griffbereit. Kleine Dinge, die bei Interessenten viel bewirken. Wischen Sie durch die Bilder.\n\n#hausverkaufen #besichtigung #immobilienverkauf #immobiliensiegburg #rheinsiegkreis"
+   "text": "Besichtigung im eigenen Haus? So zeigt es sich von seiner besten Seite.\n\nFrische Luft, viel Licht, Ruhe und die wichtigsten Unterlagen griffbereit. Kleine Dinge, die bei Interessenten viel bewirken. Wischen Sie durch die Bilder.\n\n#hausverkaufen #besichtigung #immobilienverkauf #immobiliensiegburg #rheinsiegkreis",
+   "entwurf": true,
+   "hinweis": "Reserve für Donnerstag-Ratgeber. 08.11.: neuer Wochenrhythmus (Lauren, Plan Instagram-Wachstum)"
   },
   {
    "id": "2026-11-18-story-1200-3-angebote_07_seelscheid",
@@ -1136,6 +1194,20 @@
    "entwurf": true,
    "geloescht": true,
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
+  },
+  {
+   "id": "2026-11-19-beitrag-verkaufsfertig",
+   "zeit": "2026-11-19T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/ideen/i7-verkaufsfertig-01.jpg",
+    "jpg/beitraege/ideen/i7-verkaufsfertig-02.jpg",
+    "jpg/beitraege/ideen/i7-verkaufsfertig-03.jpg",
+    "jpg/beitraege/ideen/i7-verkaufsfertig-04.jpg",
+    "jpg/beitraege/ideen/i7-verkaufsfertig-05.jpg",
+    "jpg/beitraege/ideen/i7-verkaufsfertig-06.jpg"
+   ],
+   "text": "Bevor der Fotograf kommt: vier Dinge, die Ihr Haus verkaufsfertig machen.\n\nWeniger Dinge, kleine Reparaturen, viel Licht und ein gepflegter Eingang. Das kostet wenig und macht auf den Fotos und bei der Besichtigung einen großen Unterschied. Wischen Sie durch die Bilder.\n\n#hausverkaufen #immobilienverkauf #homestaging #immobiliensiegburg #rheinsiegkreis"
   },
   {
    "id": "2026-11-19-story-1200-3-angebote_09_kaldauen-reh",
@@ -1160,7 +1232,9 @@
     "jpg/beitraege/ideen/i13-wertfaktoren-05.jpg",
     "jpg/beitraege/ideen/i13-wertfaktoren-06.jpg"
    ],
-   "text": "Was ist mein Haus wert? Diese vier Dinge entscheiden.\n\nLage, Zustand, Fläche und die aktuelle Marktlage. Wie sie zusammenspielen, zeigen wir in diesem Beitrag. Wischen Sie durch die Bilder.\n\n#immobilienbewertung #hausverkaufen #marktwert #immobiliensiegburg #rheinsiegkreis"
+   "text": "Was ist mein Haus wert? Diese vier Dinge entscheiden.\n\nLage, Zustand, Fläche und die aktuelle Marktlage. Wie sie zusammenspielen, zeigen wir in diesem Beitrag. Wischen Sie durch die Bilder.\n\n#immobilienbewertung #hausverkaufen #marktwert #immobiliensiegburg #rheinsiegkreis",
+   "entwurf": true,
+   "hinweis": "Reserve für Donnerstag-Ratgeber. 08.11.: neuer Wochenrhythmus (Lauren, Plan Instagram-Wachstum)"
   },
   {
    "id": "2026-11-20-story-1200-2-verkauft_hennef-weldergoven",
@@ -1172,6 +1246,16 @@
    "entwurf": true,
    "geloescht": true,
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
+  },
+  {
+   "id": "2026-11-24-reel-maklerdeutsch-2",
+   "zeit": "2026-11-24T10:00",
+   "typ": "REEL",
+   "bilder": [
+    "jpg/reels/maklerdeutsch-2.mp4",
+    "jpg/reels/maklerdeutsch-2-cover.jpg"
+   ],
+   "text": "Maklerdeutsch, übersetzt. Teil 2.\n\n„Lichtdurchflutet“, „ruhige Lage“, „charmanter Altbau“: Wir sagen, was dahintersteckt. Bei uns steht im Exposé übrigens, was drin ist.\n\nWelchen Begriff sollen wir als Nächstes übersetzen? Schreiben Sie ihn in die Kommentare.\n\nMusik: Scott Joplin, „The Entertainer“ (1902), gemeinfrei.\n\n#maklerdeutsch #immobilien #hauskaufen #hausverkaufen #rheinsiegkreis"
   }
  ]
 }
