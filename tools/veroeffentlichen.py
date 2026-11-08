@@ -34,6 +34,8 @@ def api(method, path, versioned=True, **params):
     data = urllib.parse.urlencode(params).encode()
     if method == "GET":
         req = urllib.request.Request(url + "?" + data.decode())
+    elif method == "DELETE":
+        req = urllib.request.Request(url + "?" + data.decode(), method="DELETE")
     else:
         req = urllib.request.Request(url, data=data, method="POST")
     try:
@@ -309,6 +311,33 @@ def main():
         alarm("test", "Testalarm: So sieht eine Warnung aus, wenn das Posten hakt. Alles in Ordnung, dieser Hinweis schließt sich gleich wieder.")
         time.sleep(20)
         alarm_aufheben()
+        return
+    if os.environ.get("MODUS", "").startswith("loeschen:"):
+        # Beiträge entfernen, z. B. alte Angebote nach Verkauf/Reservierung. Nur nach Laurens Freigabe.
+        load_token()
+        uid = ig_user_id()
+        ids = [i.strip() for i in os.environ["MODUS"].split(":", 1)[1].split(",") if i.strip()]
+        ergebnis = {}
+        for mid in ids:
+            try:
+                m = api("GET", mid, fields="id,caption,timestamp,owner")
+                if str(m.get("owner", {}).get("id", uid)) != str(uid):
+                    raise RuntimeError("gehört nicht zu diesem Konto")
+                r = api("DELETE", mid)
+                ergebnis[mid] = {"status": "geloescht", "antwort": r, "caption": (m.get("caption") or "")[:80]}
+            except Exception as ex:
+                ergebnis[mid] = {"status": "fehler", "fehler": str(ex)[:400]}
+            print(mid, json.dumps(ergebnis[mid], ensure_ascii=False))
+        sync()
+        log = "plan/entfernt.json"
+        alt = json.load(open(log)) if os.path.exists(log) else {}
+        stamp = datetime.now(BERLIN).strftime("%Y-%m-%dT%H:%M")
+        for k, v in ergebnis.items():
+            alt[k] = {**v, "am": stamp}
+        json.dump(alt, open(log, "w"), ensure_ascii=False, indent=1)
+        commit([log], f"Entfernt: {', '.join(ids)}")
+        if any(v["status"] == "fehler" for v in ergebnis.values()):
+            sys.exit(1)
         return
     if os.environ.get("MODUS") == "test":
         load_token()
