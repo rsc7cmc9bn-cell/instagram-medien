@@ -1,0 +1,39 @@
+# Sucht oder lädt gemeinfreie Musik (Wikimedia Commons) für Reels; Ergebnis im Branch musik-daten.
+name: Musik abrufen
+on:
+  workflow_dispatch:
+    inputs:
+      suche:
+        description: 'Suchbegriffe, durch | getrennt'
+        required: false
+        default: ''
+      dateien:
+        description: 'Commons-Dateinamen zum Laden, durch | getrennt'
+        required: false
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: musik-abruf
+jobs:
+  abruf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vorhandenen Stand holen
+        run: |
+          git fetch origin musik-daten && git checkout origin/musik-daten -- musik || true
+      - name: Suchen und laden
+        env:
+          SUCHE: ${{ inputs.suche }}
+          DATEIEN: ${{ inputs.dateien }}
+        run: python3 tools/musik_abruf.py
+      - name: Ergebnis ablegen
+        run: |
+          git config user.name "musik-abruf"
+          git config user.email "actions@github.com"
+          git checkout -B musik-daten
+          git add -f musik
+          git commit -qm "Musik-Stand $(date -u +%Y-%m-%dT%H:%MZ)" || true
+          git push -f origin musik-daten
