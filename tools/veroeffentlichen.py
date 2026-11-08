@@ -321,8 +321,9 @@ def main():
         for mid in ids:
             try:
                 m = api("GET", mid, fields="id,caption,timestamp,owner")
-                if str(m.get("owner", {}).get("id", uid)) != str(uid):
-                    raise RuntimeError("gehört nicht zu diesem Konto")
+                # Mit Instagram-Login ist owner.id eine andere Kennung als die Nutzer-ID; der Abruf mit
+                # unserem Schlüssel klappt ohnehin nur für eigene Beiträge.
+                print("Gefunden:", m.get("timestamp"), (m.get("caption") or "")[:60].replace("\n", " "), "| owner", m.get("owner"), "| uid", uid)
                 r = api("DELETE", mid)
                 ergebnis[mid] = {"status": "geloescht", "antwort": r, "caption": (m.get("caption") or "")[:80]}
             except Exception as ex:
