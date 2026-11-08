@@ -1,7 +1,7 @@
 {
  "17902898832598118": {
   "status": "fehler",
-  "fehler": "gehört nicht zu diesem Konto",
+  "fehler": "DELETE 17902898832598118: 400 {\"error\":{\"message\":\"Unsupported delete request. Object with ID '17902898832598118' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"Aw_8-iidJen7MYNHQQiPgyc\"}}",
   "am": "2026-11-08T18:08"
  }
 }
