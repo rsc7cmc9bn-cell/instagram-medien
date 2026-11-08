@@ -1056,12 +1056,14 @@
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
-   "id": "2026-11-14-story-1730-mm-begriff-uebergabeprotokoll",
-   "zeit": "2026-11-14T17:30",
+   "id": "2026-11-14-story-1200-reserviert-troisdorf",
+   "zeit": "2026-11-14T12:00",
    "typ": "STORY",
    "bilder": [
-    "jpg/storys/marktmoment/mm-2026-11-18-begriff-uebergabeprotokoll.jpg"
-   ]
+    "jpg/storys/3-Reserviert_02_troisdorf.jpg"
+   ],
+   "text": "",
+   "hinweis": "Reserviert-Story, einmalig (Lauren 8.11.)"
   },
   {
    "id": "2026-11-15-beitrag-magazin-07",
@@ -1169,6 +1171,14 @@
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
   },
   {
+   "id": "2026-11-18-story-0800-mm-begriff-uebergabeprotokoll",
+   "zeit": "2026-11-18T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-11-18-begriff-uebergabeprotokoll.jpg"
+   ]
+  },
+  {
    "id": "2026-11-18-beitrag-besichtigung-verkauf",
    "zeit": "2026-11-18T10:00",
    "typ": "BEITRAG",
@@ -1246,6 +1256,16 @@
    "entwurf": true,
    "geloescht": true,
    "hinweis": "07.11.: Lauren, keine Wiederholungen bereits geposteter Objekte"
+  },
+  {
+   "id": "2026-11-21-story-1200-reserviert-pleiserhohn",
+   "zeit": "2026-11-21T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/3-Reserviert_04_pleiserhohn.jpg"
+   ],
+   "text": "",
+   "hinweis": "Reserviert-Story, einmalig (Lauren 8.11.)"
   },
   {
    "id": "2026-11-24-reel-maklerdeutsch-2",
