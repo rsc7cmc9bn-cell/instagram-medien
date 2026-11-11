@@ -1,0 +1,36 @@
+# Sucht/lädt moderne, gewerblich nutzbare Musik (CC0 / CC BY) für Reels; Ergebnis im Branch musik-daten unter musik/modern.
+name: Musik modern abrufen
+on:
+  workflow_dispatch:
+    inputs:
+      incompetech: {description: 'incompetech-Liste holen (1/leer)', required: false, default: ''}
+      ccmixter: {description: 'ccMixter-Tags, durch | getrennt', required: false, default: ''}
+      commons: {description: 'Commons-Suchbegriffe, durch | getrennt', required: false, default: ''}
+      laden: {description: 'Download-URLs, durch | getrennt', required: false, default: ''}
+permissions:
+  contents: write
+concurrency:
+  group: musik-abruf
+jobs:
+  abruf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vorhandenen Stand holen
+        run: git fetch origin musik-daten && git checkout origin/musik-daten -- musik || true
+      - name: Suchen und laden
+        env:
+          INCOMPETECH: ${{ inputs.incompetech }}
+          CCMIXTER: ${{ inputs.ccmixter }}
+          COMMONS: ${{ inputs.commons }}
+          LADEN: ${{ inputs.laden }}
+        run: python3 tools/musik_modern.py
+      - name: Ergebnis ablegen
+        run: |
+          git config user.name "musik-abruf"
+          git config user.email "actions@github.com"
+          git checkout -B musik-daten
+          git add -f musik
+          git commit -qm "Musik modern $(date -u +%Y-%m-%dT%H:%MZ)" || true
+          git push -f origin musik-daten
