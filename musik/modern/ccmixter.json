@@ -1,0 +1,641 @@
+{
+ "fehler_instrumental,piano_by": "got more than 65536 bytes when reading header line",
+ "23105": {
+  "titel": "Techno Twang",
+  "kuenstler": "spinmeister",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": 130,
+  "tags": ",sample,media,trackback,in_video,bpm_130_135,intentions,ccplus,rough_mix,cczero,audio,mp3,44k,stereo,CBR,guitar,instrumental,piano,songstarter,synthesizer,techno,twang,",
+  "seite": "https://ccmixter.org/files/spinmeister/23105",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Techno_Twang.mp3",
+    "name": "spinmeister_-_Techno_Twang.mp3",
+    "format": "mp3",
+    "dauer": "5:37"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Techno_Twang_6.mp3",
+    "name": "spinmeister_-_Techno_Twang_6.mp3",
+    "format": "mp3",
+    "dauer": "2:04"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Techno_Twang_1.mp3",
+    "name": "spinmeister_-_Techno_Twang_1.mp3",
+    "format": "mp3",
+    "dauer": "5:37"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Techno_Twang_2.mp3",
+    "name": "spinmeister_-_Techno_Twang_2.mp3",
+    "format": "mp3",
+    "dauer": "2:28"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Techno_Twang_3.mp3",
+    "name": "spinmeister_-_Techno_Twang_3.mp3",
+    "format": "mp3",
+    "dauer": "0:30"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Techno_Twang_4.mp3",
+    "name": "spinmeister_-_Techno_Twang_4.mp3",
+    "format": "mp3",
+    "dauer": "5:37"
+   }
+  ],
+  "suche": "instrumental,piano"
+ },
+ "51643": {
+  "titel": "The Beautiful Rain",
+  "kuenstler": "Kimy from Black Art",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": "",
+  "tags": ",sample,media,cczero,audio,mp3,44k,stereo,CBR,hip_hop,instrumental,beat,black_art,kimy,synthesizer,bass,drums,piano,",
+  "seite": "https://ccmixter.org/files/kimy/51643",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/kimy/kimy_-_The_Beautiful_Rain.mp3",
+    "name": "kimy_-_The_Beautiful_Rain.mp3",
+    "format": "mp3",
+    "dauer": "3:51"
+   }
+  ],
+  "suche": "instrumental,piano"
+ },
+ "56001": {
+  "titel": "Miles Ahead",
+  "kuenstler": "Andrew Wainwright",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": 120,
+  "tags": ",sample,media,bpm_120_125,cczero,audio,mp3,44k,stereo,CBR,instrumental,downtempo,trance,robert_miles,orchestral,music_for_film,game,piano,chill,electro,dance,",
+  "seite": "https://ccmixter.org/files/andrewwainwright/56001",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/andrewwainwright/andrewwainwright_-_Miles_Ahead.mp3",
+    "name": "andrewwainwright_-_Miles_Ahead.mp3",
+    "format": "mp3",
+    "dauer": "5:20"
+   },
+   {
+    "url": "https://ccmixter.org/content/andrewwainwright/andrewwainwright_-_Miles_Ahead_1.mp3",
+    "name": "andrewwainwright_-_Miles_Ahead_1.mp3",
+    "format": "mp3",
+    "dauer": "5:20"
+   },
+   {
+    "url": "https://ccmixter.org/content/andrewwainwright/andrewwainwright_-_Miles_Ahead_2.mp3",
+    "name": "andrewwainwright_-_Miles_Ahead_2.mp3",
+    "format": "mp3",
+    "dauer": "5:20"
+   },
+   {
+    "url": "https://ccmixter.org/content/andrewwainwright/andrewwainwright_-_Miles_Ahead_3.mp3",
+    "name": "andrewwainwright_-_Miles_Ahead_3.mp3",
+    "format": "mp3",
+    "dauer": "5:20"
+   },
+   {
+    "url": "https://ccmixter.org/content/andrewwainwright/andrewwainwright_-_Miles_Ahead_4.mp3",
+    "name": "andrewwainwright_-_Miles_Ahead_4.mp3",
+    "format": "mp3",
+    "dauer": "5:20"
+   }
+  ],
+  "suche": "instrumental,chill"
+ },
+ "fehler_instrumental,acoustic_by": "got more than 65536 bytes when reading header line",
+ "56668": {
+  "titel": "3 Acoustic Guitars (Instrumental)",
+  "kuenstler": "Aussens@iter",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": 108,
+  "tags": ",sample,media,bpm_105_110,trackback,in_video,ccplus,cczero,audio,mp3,44k,stereo,CBR,flac,VBR,aussensaiter,acoustic,guitar,steel_string,instrumental,chill,downtempo,music_for_film,music_for_video,",
+  "seite": "https://ccmixter.org/files/tobias_weber/56668",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_3_Acoustic_Guitars_(Instrumental).mp3",
+    "name": "tobias_weber_-_3_Acoustic_Guitars_(Instrumental).mp3",
+    "format": "mp3",
+    "dauer": "1:29"
+   },
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_3_Acoustic_Guitars_(Instrumental).flac",
+    "name": "tobias_weber_-_3_Acoustic_Guitars_(Instrumental).flac",
+    "format": "flac",
+    "dauer": "1:29"
+   },
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_3_Acoustic_Guitars_(Instrumental)_1.flac",
+    "name": "tobias_weber_-_3_Acoustic_Guitars_(Instrumental)_1.flac",
+    "format": "flac",
+    "dauer": "1:29"
+   },
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_3_Acoustic_Guitars_(Instrumental)_2.flac",
+    "name": "tobias_weber_-_3_Acoustic_Guitars_(Instrumental)_2.flac",
+    "format": "flac",
+    "dauer": "1:29"
+   }
+  ],
+  "suche": "instrumental,chill"
+ },
+ "57952": {
+  "titel": "Prelude For Classical Guitar (Instrumental)",
+  "kuenstler": "Aussens@iter",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": 110,
+  "tags": ",sample,media,bpm_110_115,amplifiers,multiple_formats,cczero,audio,mp3,44k,stereo,CBR,flac,VBR,aussensaiter,prelude,instrumental,acoustic,guitar,music_for_film,music_for_video,video_music,chill,ballad,jazz,",
+  "seite": "https://ccmixter.org/files/tobias_weber/57952",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_Prelude_For_Classical_Guitar_(Instrumental).mp3",
+    "name": "tobias_weber_-_Prelude_For_Classical_Guitar_(Instrumental).mp3",
+    "format": "mp3",
+    "dauer": "2:17"
+   },
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_Prelude_For_Classical_Guitar_(Instrumental)_1.flac",
+    "name": "tobias_weber_-_Prelude_For_Classical_Guitar_(Instrumental)_1.flac",
+    "format": "flac",
+    "dauer": "2:17"
+   },
+   {
+    "url": "https://ccmixter.org/content/tobias_weber/tobias_weber_-_Prelude_For_Classical_Guitar_(Instrumental)_2.flac",
+    "name": "tobias_weber_-_Prelude_For_Classical_Guitar_(Instrumental)_2.flac",
+    "format": "flac",
+    "dauer": "2:19"
+   }
+  ],
+  "suche": "instrumental,chill"
+ },
+ "23913": {
+  "titel": "Silent Night",
+  "kuenstler": "Pitx",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": "",
+  "tags": "sample,media,acoustic,carol,christmas,christmix,guitar,instrumental,cczero,audio,mp3,44k,stereo,CBR,archive,zip",
+  "seite": "https://ccmixter.org/files/Pitx/23913",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/Pitx/Pitx_-_Silent_Night.mp3",
+    "name": "Pitx_-_Silent_Night.mp3",
+    "format": "mp3",
+    "dauer": "0:52"
+   },
+   {
+    "url": "https://ccmixter.org/content/Pitx/Pitx_-_Silent_Night.zip",
+    "name": "Pitx_-_Silent_Night.zip",
+    "format": "zip",
+    "dauer": null
+   }
+  ],
+  "suche": "instrumental,acoustic"
+ },
+ "50957": {
+  "titel": "Song Title Indicates Meaning",
+  "kuenstler": "jaspertine",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": "",
+  "tags": ",media,remix,cczero,audio,mp3,44k,stereo,CBR,instrumental,guitar,acoustic,lofi,alternative,minimal,jaspertine,",
+  "seite": "https://ccmixter.org/files/jaspertine/50957",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/jaspertine/jaspertine_-_Song_Title_Indicates_Meaning.mp3",
+    "name": "jaspertine_-_Song_Title_Indicates_Meaning.mp3",
+    "format": "mp3",
+    "dauer": "4:51"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "fehler_instrumental,chill_by": "got more than 65536 bytes when reading header line",
+ "21067": {
+  "titel": "Intergalactic Journey",
+  "kuenstler": "spinmeister",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": 90,
+  "tags": ",sample,media,trackback,in_video,bpm_090_095,ccplus,rough_mix,cczero,audio,mp3,44k,stereo,CBR,ambient,chill,electronic,instrumental,song_starter,outer_space,galactic,",
+  "seite": "https://ccmixter.org/files/spinmeister/21067",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey.mp3",
+    "format": "mp3",
+    "dauer": "5:59"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_4.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_4.mp3",
+    "format": "mp3",
+    "dauer": "5:23"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_5.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_5.mp3",
+    "format": "mp3",
+    "dauer": "0:45"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_6.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_6.mp3",
+    "format": "mp3",
+    "dauer": "2:11"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_7.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_7.mp3",
+    "format": "mp3",
+    "dauer": "2:26"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_8.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_8.mp3",
+    "format": "mp3",
+    "dauer": "5:42"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_9.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_9.mp3",
+    "format": "mp3",
+    "dauer": "5:52"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_2.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_2.mp3",
+    "format": "mp3",
+    "dauer": "5:42"
+   },
+   {
+    "url": "https://ccmixter.org/content/spinmeister/spinmeister_-_Intergalactic_Journey_3.mp3",
+    "name": "spinmeister_-_Intergalactic_Journey_3.mp3",
+    "format": "mp3",
+    "dauer": "5:20"
+   }
+  ],
+  "suche": "instrumental,chill"
+ },
+ "39122": {
+  "titel": "Out of Time (stems)",
+  "kuenstler": "Ass Over Tea Kettle",
+  "lizenz": "CC0 (CC Zero)",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "bpm": 92,
+  "tags": ",sample,media,bpm_090_095,ccplus,rough_mix,cczero,audio,mp3,44k,stereo,VBR,flac,bass,chill,downtempo,drums,instrumental,keyboards,pads,synthesizer,",
+  "seite": "https://ccmixter.org/files/assoverteakettle/39122",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/assoverteakettle/assoverteakettle_-_Out_of_Time_(stems).mp3",
+    "name": "assoverteakettle_-_Out_of_Time_(stems).mp3",
+    "format": "mp3",
+    "dauer": "3:34"
+   },
+   {
+    "url": "https://ccmixter.org/content/assoverteakettle/assoverteakettle_-_Out_of_Time_(stems).flac",
+    "name": "assoverteakettle_-_Out_of_Time_(stems).flac",
+    "format": "flac",
+    "dauer": "3:35"
+   },
+   {
+    "url": "https://ccmixter.org/content/assoverteakettle/assoverteakettle_-_Out_of_Time_(stems)_4.flac",
+    "name": "assoverteakettle_-_Out_of_Time_(stems)_4.flac",
+    "format": "flac",
+    "dauer": "2:44"
+   },
+   {
+    "url": "https://ccmixter.org/content/assoverteakettle/assoverteakettle_-_Out_of_Time_(stems)_1.flac",
+    "name": "assoverteakettle_-_Out_of_Time_(stems)_1.flac",
+    "format": "flac",
+    "dauer": "3:01"
+   },
+   {
+    "url": "https://ccmixter.org/content/assoverteakettle/assoverteakettle_-_Out_of_Time_(stems)_2.flac",
+    "name": "assoverteakettle_-_Out_of_Time_(stems)_2.flac",
+    "format": "flac",
+    "dauer": "2:47"
+   }
+  ],
+  "suche": "instrumental,chill"
+ },
+ "33304": {
+  "titel": "The Broken",
+  "kuenstler": "Admiral Bob",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": "",
+  "tags": ",tubed_by_you,media,remix,editorial_pick,trackback,in_video,ccplus,sample,attribution,audio,mp3,44k,stereo,CBR,archive,zip,ambient,chimes,electric,guitar,instrumental,mandolin,mellow,romantic,electric_guitar,telecaster,",
+  "seite": "https://ccmixter.org/files/admiralbob77/33304",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Broken.mp3",
+    "name": "admiralbob77_-_The_Broken.mp3",
+    "format": "mp3",
+    "dauer": "2:43"
+   },
+   {
+    "url": "https://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Broken.zip",
+    "name": "admiralbob77_-_The_Broken.zip",
+    "format": "zip",
+    "dauer": null
+   }
+  ],
+  "suche": "instrumental,guitar,mellow"
+ },
+ "7817": {
+  "titel": "Mystic",
+  "kuenstler": "Phazor",
+  "lizenz": "Attribution",
+  "lizenz_url": "http://creativecommons.org/licenses/by/2.5/",
+  "bpm": "",
+  "tags": "media,remix,guitar,instrumental,mellow,attribution,audio,mp3,44k,stereo,CBR",
+  "seite": "https://ccmixter.org/files/aerosolspray/7817",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/aerosolspray/aerosolspray_-_Mystic.mp3",
+    "name": "aerosolspray_-_Mystic.mp3",
+    "format": "mp3",
+    "dauer": "2:13"
+   }
+  ],
+  "suche": "instrumental,guitar,mellow"
+ },
+ "43005": {
+  "titel": "Space Bazooka",
+  "kuenstler": "Kirkoid",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 90,
+  "tags": ",media,secret_mixter,remix,summer,2013,summer_2013,trackback,in_video,bpm_090_095,ccplus,attribution,audio,mp3,44k,stereo,CBR,electronic,instrumental,chill,downtempo,lofi,",
+  "seite": "https://ccmixter.org/files/Kirkoid/43005",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/Kirkoid/Kirkoid_-_Space_Bazooka_1.mp3",
+    "name": "Kirkoid_-_Space_Bazooka_1.mp3",
+    "format": "mp3",
+    "dauer": "2:14"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "43938": {
+  "titel": "Shiro (Kirkoid Mix)",
+  "kuenstler": "Kirkoid",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 80,
+  "tags": ",media,secret_mixter,remix,fall_2013,editorial_pick,trackback,in_video,in_web,bpm_080_085,ccplus,attribution,audio,mp3,44k,stereo,CBR,instrumental,electronic,downtempo,chill,lofi,",
+  "seite": "https://ccmixter.org/files/Kirkoid/43938",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/Kirkoid/Kirkoid_-_Shiro_(Kirkoid_Mix)_1.mp3",
+    "name": "Kirkoid_-_Shiro_(Kirkoid_Mix)_1.mp3",
+    "format": "mp3",
+    "dauer": "2:03"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "65028": {
+  "titel": "0450am",
+  "kuenstler": "airtone",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 80,
+  "tags": ",media,remix,editorial_pick,bpm_080_085,ccplus,attribution,audio,mp3,44k,stereo,CBR,instrumental,chill,lofi,music_for_film,music_for_video,music_for_games,ambient,field_recording,",
+  "seite": "https://ccmixter.org/files/airtone/65028",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_0450am_2.mp3",
+    "name": "airtone_-_0450am_2.mp3",
+    "format": "mp3",
+    "dauer": "10:54"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_0450am.mp3",
+    "name": "airtone_-_0450am.mp3",
+    "format": "mp3",
+    "dauer": "10:54"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "47797": {
+  "titel": "Piano Song For Goodnight",
+  "kuenstler": "Doxent Zsigmond",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 88,
+  "tags": ",sample,media,bpm_085_090,ccplus,multiple_formats,attribution,audio,mp3,44k,stereo,CBR,mid,flac,VBR,instrumental,piano,chill,jazz,80s,lofi,one_shots,",
+  "seite": "https://ccmixter.org/files/doxent/47797",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/doxent/doxent_-_Piano_Song_For_Goodnight.mp3",
+    "name": "doxent_-_Piano_Song_For_Goodnight.mp3",
+    "format": "mp3",
+    "dauer": "4:40"
+   },
+   {
+    "url": "https://ccmixter.org/content/doxent/doxent_-_Piano_Song_For_Goodnight.mid",
+    "name": "doxent_-_Piano_Song_For_Goodnight.mid",
+    "format": "mid",
+    "dauer": null
+   },
+   {
+    "url": "https://ccmixter.org/content/doxent/doxent_-_Piano_Song_For_Goodnight.flac",
+    "name": "doxent_-_Piano_Song_For_Goodnight.flac",
+    "format": "flac",
+    "dauer": "4:40"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "64772": {
+  "titel": "lostTrack",
+  "kuenstler": "airtone",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 80,
+  "tags": ",media,remix,bpm_080_085,ccplus_stem,ccplus,sample,attribution,audio,mp3,44k,stereo,CBR,instrumental,lofi,piano,",
+  "seite": "https://ccmixter.org/files/airtone/64772",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack.mp3",
+    "name": "airtone_-_lostTrack.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_1.mp3",
+    "name": "airtone_-_lostTrack_1.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_2.mp3",
+    "name": "airtone_-_lostTrack_2.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_3.mp3",
+    "name": "airtone_-_lostTrack_3.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_4.mp3",
+    "name": "airtone_-_lostTrack_4.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_5.mp3",
+    "name": "airtone_-_lostTrack_5.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_6.mp3",
+    "name": "airtone_-_lostTrack_6.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   },
+   {
+    "url": "https://ccmixter.org/content/airtone/airtone_-_lostTrack_7.mp3",
+    "name": "airtone_-_lostTrack_7.mp3",
+    "format": "mp3",
+    "dauer": "3:21"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "63869": {
+  "titel": "Sad Night",
+  "kuenstler": "Robbero",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 67,
+  "tags": ",media,remix,bpm_065_070,attribution,audio,mp3,44k,stereo,CBR,instrumental,robbero,hip_hop,lofi,chill,",
+  "seite": "https://ccmixter.org/files/Robbero/63869",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/Robbero/Robbero_-_Sad_Night.mp3",
+    "name": "Robbero_-_Sad_Night.mp3",
+    "format": "mp3",
+    "dauer": "4:19"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "70150": {
+  "titel": "ARK",
+  "kuenstler": "zikweb",
+  "lizenz": "Attribution",
+  "lizenz_url": "http://creativecommons.org/licenses/by/2.5/",
+  "bpm": 77,
+  "tags": ",media,remix,bpm_075_080,sample,attribution,audio,mp3,44k,stereo,CBR,piano,lofi,ambient_flavor,instrumental,",
+  "seite": "https://ccmixter.org/files/zikweb/70150",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK.mp3",
+    "name": "zikweb_-_ARK.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_1.mp3",
+    "name": "zikweb_-_ARK_1.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_2.mp3",
+    "name": "zikweb_-_ARK_2.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_3.mp3",
+    "name": "zikweb_-_ARK_3.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_4.mp3",
+    "name": "zikweb_-_ARK_4.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_5.mp3",
+    "name": "zikweb_-_ARK_5.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_6.mp3",
+    "name": "zikweb_-_ARK_6.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   },
+   {
+    "url": "https://ccmixter.org/content/zikweb/zikweb_-_ARK_7.mp3",
+    "name": "zikweb_-_ARK_7.mp3",
+    "format": "mp3",
+    "dauer": "2:51"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "39206": {
+  "titel": "Lofi Piano",
+  "kuenstler": "Doxent Zsigmond",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": "",
+  "tags": ",sample,media,ccplus,attribution,audio,ogg,44k,stereo,mp3,VBR,piano,lofi,acoustic,chill,downtempo,instrumental,",
+  "seite": "https://ccmixter.org/files/doxent/39206",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/doxent/doxent_-_Lofi_Piano.ogg",
+    "name": "doxent_-_Lofi_Piano.ogg",
+    "format": "ogg",
+    "dauer": "3:59"
+   },
+   {
+    "url": "https://ccmixter.org/content/doxent/doxent_-_Lofi_Piano.mp3",
+    "name": "doxent_-_Lofi_Piano.mp3",
+    "format": "mp3",
+    "dauer": "3:59"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ },
+ "63486": {
+  "titel": "Bruno aramayo",
+  "kuenstler": "brunoaramayo",
+  "lizenz": "Attribution (3.0)",
+  "lizenz_url": "http://creativecommons.org/licenses/by/3.0/",
+  "bpm": 160,
+  "tags": ",site_promo,media,bpm_160_165,attribution,audio,mp3,48k,stereo,VBR,rock,instrumental,windfall,lofi,vaporwave,guitar,electronic,synthesizer,chill,hip_hop,electro,",
+  "seite": "https://ccmixter.org/files/brunoaramayo/63486",
+  "dateien": [
+   {
+    "url": "https://ccmixter.org/content/brunoaramayo/brunoaramayo_-_Bruno_aramayo.mp3",
+    "name": "brunoaramayo_-_Bruno_aramayo.mp3",
+    "format": "mp3",
+    "dauer": "0:48"
+   }
+  ],
+  "suche": "instrumental,lofi"
+ }
+}
