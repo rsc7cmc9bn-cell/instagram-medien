@@ -1124,7 +1124,7 @@
   },
   {
    "id": "2026-11-16-beitrag-grundriss-lesen",
-   "zeit": "2026-11-16T10:00",
+   "zeit": "2026-11-26T10:00",
    "typ": "BEITRAG",
    "bilder": [
     "jpg/beitraege/ideen/i11-grundriss-01.jpg",
@@ -1135,8 +1135,7 @@
     "jpg/beitraege/ideen/i11-grundriss-06.jpg"
    ],
    "text": "Einen Grundriss richtig lesen: vier Dinge, auf die es ankommt.\n\nMaßstab, Himmelsrichtung, Wege im Haus und Stellflächen. So erkennen Sie schon vor der Besichtigung, ob ein Haus zu Ihnen passt. Wischen Sie durch die Bilder.\n\n#grundriss #hauskaufen #wohnungkaufen #immobiliensiegburg #rheinsiegkreis",
-   "entwurf": true,
-   "hinweis": "Reserve für Donnerstag-Ratgeber. 08.11.: neuer Wochenrhythmus (Lauren, Plan Instagram-Wachstum)"
+   "hinweis": "Donnerstag-Ratgeber 26.11. (Redaktionskonferenz, nachgeholt 17.11.)"
   },
   {
    "id": "2026-11-16-story-1200-3-angebote_06_lohmar-weegen",
@@ -1276,6 +1275,115 @@
     "jpg/reels/maklerdeutsch-2-cover.jpg"
    ],
    "text": "Maklerdeutsch, übersetzt. Teil 2.\n\n„Lichtdurchflutet“, „ruhige Lage“, „charmanter Altbau“: Wir sagen, was dahintersteckt. Bei uns steht im Exposé übrigens, was drin ist.\n\nWelchen Begriff sollen wir als Nächstes übersetzen? Schreiben Sie ihn in die Kommentare.\n\nMusik: Scott Joplin, „The Entertainer“ (1902), gemeinfrei.\n\n#maklerdeutsch #immobilien #hauskaufen #hausverkaufen #rheinsiegkreis"
+  },
+  {
+   "id": "2026-11-22-beitrag-magazin-08",
+   "zeit": "2026-11-22T10:00",
+   "typ": "BEITRAG",
+   "bilder": [
+    "jpg/beitraege/magazin/mag08-01.jpg",
+    "jpg/beitraege/magazin/mag08-02.jpg",
+    "jpg/beitraege/magazin/mag08-03.jpg",
+    "jpg/beitraege/magazin/mag08-04.jpg",
+    "jpg/beitraege/magazin/mag08-05.jpg",
+    "jpg/beitraege/magazin/mag08-06.jpg",
+    "jpg/beitraege/magazin/mag08-07.jpg",
+    "jpg/beitraege/magazin/mag08-08.jpg",
+    "jpg/beitraege/magazin/mag08-09.jpg",
+    "jpg/beitraege/magazin/mag08-10.jpg"
+   ],
+   "text": "Verkaufen im Winter: besser als sein Ruf? Drei Gründe, warum die kalte Jahreszeit für Eigentümer im Rhein-Sieg-Kreis gar nicht schlecht ist. Das Immobilienmagazin, Ausgabe 08.\n\nAußerdem in dieser Ausgabe: die Bauzinsen, Stadt Blankenberg als Ort der Woche, der Begriff Vorfälligkeitsentschädigung und die erste Bausparkasse.\n\nAllgemeine Information, keine Rechts- oder Finanzberatung.\n\nWischen Sie durch die Bilder und speichern Sie die Ausgabe für später. Jeden Sonntag erscheint eine neue Ausgabe.\n\n#immobilienmagazin #hausverkaufen #rheinsiegkreis #siegburg #immobilien"
+  },
+  {
+   "id": "2026-11-22-story-1200-magazin-08-neu",
+   "zeit": "2026-11-22T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/magazin/mag08-neu.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-22-reel-magazin-08-teaser",
+   "zeit": "2026-11-22T17:00",
+   "typ": "REEL",
+   "bilder": [
+    "jpg/reels/magazin-08-teaser.mp4",
+    "jpg/reels/magazin-08-teaser-cover.jpg"
+   ],
+   "text": "Das Immobilienmagazin, Ausgabe 08, ist da: Verkaufen im Winter, die Bauzinsen, Stadt Blankenberg und die erste Bausparkasse. Die ganze Ausgabe finden Sie in unserem Feed.\n\nMusik: W. A. Mozart, „Eine kleine Nachtmusik“, 1. Satz (Musopen, gemeinfrei).\n\n#immobilienmagazin #immobilien #rheinsiegkreis"
+  },
+  {
+   "id": "2026-11-23-story-0800-magazin-08-seite",
+   "zeit": "2026-11-23T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/magazin/mag08-seite-bausparkasse.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-19-story-1730-kurioses-5-schornsteinfeger",
+   "zeit": "2026-11-19T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/kurioses-5-schornsteinfeger.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-20-story-1730-unsere-ecke-4-burg-wissem",
+   "zeit": "2026-11-20T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/unsere-ecke-4-burg-wissem.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-24-story-1730-maklerdeutsch-5",
+   "zeit": "2026-11-24T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/maklerdeutsch-5.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-25-story-0800-mm-2026-11-25-zahl-grunderwerbsteuer",
+   "zeit": "2026-11-25T08:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-11-25-zahl-grunderwerbsteuer.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-26-story-1730-kurioses-6-schwelle",
+   "zeit": "2026-11-26T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/kurioses-6-schwelle.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-27-story-1730-unsere-ecke-5-weihnachtsmarkt",
+   "zeit": "2026-11-27T17:30",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/reihen/unsere-ecke-5-weihnachtsmarkt.jpg"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2026-11-28-story-1200-mm-2026-11-28-tipp-rechnungen",
+   "zeit": "2026-11-28T12:00",
+   "typ": "STORY",
+   "bilder": [
+    "jpg/storys/marktmoment/mm-2026-11-28-tipp-rechnungen.jpg"
+   ],
+   "text": ""
   }
  ]
 }
